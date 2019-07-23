@@ -85,7 +85,7 @@
 										<div id="paths"></div>
 
 										<!--Adding the script for the MovingMarker Plugin-->
-										<script type="text/javascript" src="movingmarker/MovingMarker.js"></script>
+										<script type="text/javascript" src="MovingMarker.js"></script>
 										<!--Adding the script for the EasyButton Plugin-->
 										<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
@@ -175,10 +175,11 @@
 
 										map.fitBounds(FumiSato);
 
-										//The button
-										L.easyButton( 'fas fa-pause', function(){
-										  pause; //fix syntax
-										}).addTo(map);
+										//The pause button
+										//Need this button to pause the movement of all six markers
+										//L.easyButton( 'fas fa-pause', function(){
+										 // pause; //fix syntax
+										//).addTo(map);
 
 											//Harue Osaki's path
 											var marker2 = L.Marker.movingMarker(

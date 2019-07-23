@@ -16,10 +16,17 @@
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
 		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 		crossorigin=""/>
+
 		<!-- Make sure you put this AFTER Leaflet's CSS -->
 		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
 		integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
 		crossorigin=""></script>
+
+		<!--Easy Button stuff-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+
+		<!--Font Awesome stuff-->
+		<script src="https://kit.fontawesome.com/7e07d53c48.js"></script>
 	</head>
 
 	<body class="right-sidebar is-preload">
@@ -77,17 +84,182 @@
 
 										<div id="paths"></div>
 
-										<script>
-										//https://api.mapbox.com/styles/v1/sarahp98/cjxo2uw8c3b401cogsrixqhd2.html?fresh=true&title=true&access_token=pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg#13.4/47.252026/-122.425609/353
-										//From Leaflet
-										var map = L.map('paths').setView([47.2529, -122.4443], 15);
+										<!--Adding the script for the MovingMarker Plugin-->
+										<script type="text/javascript" src="movingmarker/MovingMarker.js"></script>
+										<!--Adding the script for the EasyButton Plugin-->
+										<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
-										L.tileLayer('https://api.mapbox.com/styles/v1/sarahp98/{id}.html?fresh=true&title=true&access_token={accessToken}', {
-										    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-										    maxZoom: 18,
-										    id: 'cjxo2uw8c3b401cogsrixqhd2',
-										    accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
+										<script>
+										//The coordinates for each person's daily paths
+										var HarueOzaki = [
+											[47.248295, -122.440435], //Home
+											[47.255138, -122.442024], //Turn
+											[47.254538, -122.447838], //Turn
+											[47.257605, -122.448565], //Turn
+											[47.256114, -122.463016], //Turn
+											[47.255749, -122.463670], //Jason Lee MS
+											[47.256114, -122.463016], //Turn
+											[47.257605, -122.448565], //Turn
+											[47.254537, -122.447865], //Turn
+											[47.254806, -122.444915], //Turn
+											[47.245565, -122.442819]  //JLS
+										];
+
+										var JuneMieko = [
+											[47.248426, -122.441958], //Home
+											[47.257200, -122.443926], //Turn
+											[47.258641, -122.443280], //Turn
+											[47.264113, -122.447121], //Turn
+											[47.264618, -122.448435], //Turn
+											[47.265535, -122.447791], //Turn
+											[47.265756, -122.448481], //Stadium HS
+											[47.265591, -122.447797], //Turn
+											[47.264618, -122.448435], //Turn
+											[47.264098, -122.447111], //Turn
+											[47.245565, -122.442819]  //JLS
+										];
+
+										var FumiSato = [
+											[47.250073, -122.417610], //Home
+											[47.251465, -122.422822], //Turn
+											[47.253271, -122.424217], //Turn
+											[47.254735, -122.427575], //Turn
+											[47.254495, -122.428412], //Turn
+											[47.253336, -122.439389], //Turn
+											[47.257967, -122.440451], //Turn
+											[47.261113, -122.442543], //Turn
+											[47.264737, -122.445950], //Turn
+											[47.265734, -122.448353], //Stadium HS
+											[47.265591, -122.447797], //Turn
+											[47.264610, -122.448481], //Turn
+											[47.264091, -122.447089], //Turn
+											[47.245565, -122.442819]  //JLS
+										];
+
+										var RyoMunekata = [
+											[47.250574, -122.439497], //Home
+											[47.255260, -122.440854], //Turn
+											[47.255129, -122.442007], //Turn
+											[47.257474, -122.442518], //Turn
+											[47.262286, -122.445746], //Turn
+											[47.264091, -122.447089], //Turn
+											[47.264610, -122.448481], //Turn
+											[47.265591, -122.447797], //Turn
+											[47.265734, -122.448353], //Stadium HS
+											[47.265591, -122.447797], //Turn
+											[47.264610, -122.448481], //Turn
+											[47.264091, -122.447089], //Turn
+											[47.245565, -122.442819]  //JLS
+										];
+
+										var MasayeJinguji = [
+											[47.252052, -122.441321], //Turn
+											[47.255131, -122.442013], //Turn
+											[47.254847, -122.444914], //Turn
+											[47.256418, -122.445319], //Central
+											[47.245565, -122.442819]  //JLS
+										];
+
+
+										//Centering the map
+										var map = L.map('paths').setView([47.244323, -122.445536], 14);
+
+										//Picking the basemap
+										var Stamen_TonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
+											attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+											subdomains: 'abcd',
+											minZoom: 0,
+											maxZoom: 20,
+											ext: 'png'
 										}).addTo(map);
+
+										map.fitBounds(FumiSato);
+
+										//The button
+										L.easyButton( 'fas fa-pause', function(){
+										  pause; //fix syntax
+										}).addTo(map);
+
+											//Harue Osaki's path
+											var marker2 = L.Marker.movingMarker(
+												HarueOzaki,
+											8000, {autostart: true}).addTo(map);
+
+											marker2.addStation(5, 1000);
+
+											marker2.on('click', function() {
+											    marker2.bindPopup('<b>"I went home with Mom. Sometimes we took the Tacoma streetcar down 17th street. And we’d walk down that street to the streetcar and then rode it to the end. And then walked from there through the park a little bit to our house."<br>-Harue Ozaki, September 15, 2004</b>', {closeOnClick: false})
+											    .openPopup();
+											})
+
+							        L.polyline(HarueOzaki,
+							          {color: 'green'}).addTo(map);
+											////////////////////////////////
+
+											//June Mieko's path
+											var marker3 = L.Marker.movingMarker(
+												JuneMieko,
+											8000, {autostart: true}).addTo(map);
+
+											marker3.addStation(6, 1000);
+
+											marker3.on('click', function() {
+											    marker3.bindPopup('<b>"we would walk down the street, and we would cross the street, and we would walk a little bit more, and we would cross the street.  I mean, we would do this like a lot of times, and I said. Dad, why are we doing this?  And he would never say anything. And so, it wasn’t until years and years later that I realized that because they would spit at us, or because they would call us names, or confront my father, that he just didn’t want this, and so he just avoided it."<br>-June Mieko, January 27th, 2005</b>', {closeOnClick: false})
+											    .openPopup();
+											})
+
+											L.polyline(JuneMieko,
+							          {color: 'blue'}).addTo(map);
+											////////////////////////////////
+
+											//Fumi Sato's path
+											var marker4 = L.Marker.movingMarker(
+												FumiSato,
+											8000, {autostart: true}).addTo(map);
+
+											marker4.addStation(9, 1000);
+
+											marker4.on('click', function() {
+											    marker4.bindPopup('<b>"I remember when we went to high school we took a streetcar. But then we’d go to Japanese school afterwards, and I knew my girlfriend who lived in town, she and I would walk to her house, and her mother would have baked yams on those stoves, you know, and we would have that and then go out to Japanese school"<br>-Fumi Sato, January 27th, 2005</b>', {closeOnClick: false})
+											    .openPopup();
+											})
+
+											L.polyline(FumiSato,
+												{color: 'red'}).addTo(map);
+											////////////////////////////////
+
+											//Ryo Munekata's path
+											var marker5 = L.Marker.movingMarker(
+												RyoMunekata,
+											8000, {autostart: true}).addTo(map);
+
+											marker5.addStation(8, 1000);
+
+											marker5.on('click', function() {
+											    marker5.bindPopup('<b>"And then between three and four we either had to go home and then go to Language School or we went directly. And if we did go home, we’d find time to pick up something to munch on.  And you’d pick it up, and then start walking to school, and whatever you had in your hand, you’re eating it, and I well remember our teacher saying, “It’s not proper to be standing, let alone walking, to be eating food.” And so sometimes we’d cheat and we’d put something in our mouth, and walking the street, you’d try not to move your jaws. (laughter)"<br>-Ryo Munekata, August 7, 2003</b>', {closeOnClick: false})
+											    .openPopup();
+											})
+
+											L.polyline(RyoMunekata,
+												{color: 'black'}).addTo(map);
+											////////////////////////////////
+
+											//Masaye Jinguji's path
+											var marker6 = L.Marker.movingMarker(
+												MasayeJinguji,
+											8000, {autostart: true}).addTo(map);
+
+											marker6.addStation(3, 1000);
+
+											marker6.on('click', function() {
+											    marker6.bindPopup('<b>"So, between 3:30 and 4:00, we would stop by our home, which is on Market Street and which is not too far on the way to the Japanese school, and we would have a little bite to eat.  Generally, it was boiled sweet potatoes. But it was enough to take us to Japanese school, which started at four o’clock."<br>-Masaye Jinguji</b>', {closeOnClick: false})
+											    .openPopup();
+											})
+
+											L.polyline(MasayeJinguji,
+												{color: 'orange'}).addTo(map);
+											////////////////////////////////
+
 										</script>
 
 										<p>
@@ -154,7 +326,7 @@
 									</p>
 									<div class="row gtr-50">
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic10.jpg" alt="" /></a>
 										</div>
 										<div class="col-8">
 											<h4>Nibh sed cubilia</h4>
@@ -163,7 +335,7 @@
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic11.jpg" alt="" /></a>
 										</div>
 										<div class="col-8">
 											<h4>Proin sed adipiscing</h4>
@@ -172,7 +344,7 @@
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic12.jpg" alt="" /></a>
 										</div>
 										<div class="col-8">
 											<h4>Lorem feugiat magna</h4>
@@ -181,7 +353,7 @@
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic13.jpg" alt="" /></a>
 										</div>
 										<div class="col-8">
 											<h4>Sed tempus fringilla</h4>
@@ -190,7 +362,7 @@
 											</p>
 										</div>
 										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic14.jpg" alt="" /></a>
 										</div>
 										<div class="col-8">
 											<h4>Malesuada fermentum</h4>
@@ -208,7 +380,7 @@
 						<hr />
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="pic07.jpg" alt="" /></a>
 								<header>
 									<h3><a href="#">Gravida aliquam penatibus</a></h3>
 								</header>
@@ -218,7 +390,7 @@
 								</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="pic08.jpg" alt="" /></a>
 								<header>
 									<h3><a href="#">Sed quis rhoncus placerat</a></h3>
 								</header>
@@ -228,7 +400,7 @@
 								</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="pic09.jpg" alt="" /></a>
 								<header>
 									<h3><a href="#">Magna laoreet et aliquam</a></h3>
 								</header>
@@ -328,22 +500,22 @@
 									</header>
 									<div class="row gtr-25">
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic10.jpg" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic11.jpg" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic12.jpg" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic13.jpg" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic14.jpg" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="pic15.jpg" alt="" /></a>
 										</div>
 									</div>
 								</section>
@@ -385,14 +557,14 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="jquery.min.js"></script>
+			<script src="jquery.dropotron.min.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="jquery.scrollex.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
 
 	</body>
 </html>

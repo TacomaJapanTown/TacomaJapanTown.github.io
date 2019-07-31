@@ -74,7 +74,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-L.geoJSON(PathStops.json).addTo(mymap);
+L.geoJSON(useme.JSON).addTo(mymap);
 
 //The pause/play function
 function pauseButtonClick()

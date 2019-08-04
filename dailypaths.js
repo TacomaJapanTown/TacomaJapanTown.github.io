@@ -89,7 +89,7 @@ function pauseButtonClick()
 $.getJSON("data/pathstopshomes.geojson",function(data){
   var icon1 = L.icon({
     iconUrl: 'images/home.png', //<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    iconSize: [15,15]
+    iconSize: [20,20]
   });
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){
@@ -101,7 +101,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
 $.getJSON("data/pathstopsschools.geojson",function(data){
   var icon1 = L.icon({
     iconUrl: 'images/pencil.png', //<div>Icons made by <a href="https://www.flaticon.com/authors/situ-herrera" title="Situ Herrera">Situ Herrera</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    iconSize: [15,15]
+    iconSize: [20,20]
   });
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){
@@ -113,7 +113,7 @@ $.getJSON("data/pathstopsschools.geojson",function(data){
 $.getJSON("data/jls.geojson",function(data){
   var icon1 = L.icon({
     iconUrl: 'images/pencil.png', //<div>Icons made by <a href="https://www.flaticon.com/authors/situ-herrera" title="Situ Herrera">Situ Herrera</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    iconSize: [20,20]
+    iconSize: [30,30]
   });
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){

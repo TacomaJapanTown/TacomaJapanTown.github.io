@@ -86,10 +86,16 @@ function pauseButtonClick()
             markerList[i].pause();
     }
 }
-// load GeoJSON from an external file
 $.getJSON("pathstops.geojson",function(data){
-  // add GeoJSON layer to the map once the file is loaded
-  L.geoJson(data).addTo(mymap);
+  var icon1 = L.icon({
+    iconUrl: 'images/home-15.svg',
+    iconSize: [30,70]
+  });
+  L.geoJson(data,{
+    pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: icon1});
+    }
+  }).addTo(mymap);
 });
 
 //Harue Osaki's path

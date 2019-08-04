@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
 		<link rel="stylesheet" href="leaflet.css" />
 		<script src="leaflet.ajax.min.js"></script>
-		<!--<script src="leaflet.ajax.js"></script>-->
+		<script src="leaflet.ajax.js"></script>
 		<script src="leaflet.js"></script>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <style>
@@ -73,6 +73,11 @@
 								 		<script type="text/javascript" src="MovingMarker.js"></script>
 								    <!--First call my internal JS file before calling outside scripts. I may need to fiddle with the order of the external scripts to get things right.-->
 								    <script type="text/javascript" src="dailypaths.js"></script>
+
+										<script>
+										var geojsonLayer = new L.GeoJSON.AJAX("allbuildings.geojson");
+										geojsonLayer.addTo(mymap);
+										</script>
 										<p>
 											Paragraph
 										</p>

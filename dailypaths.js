@@ -74,11 +74,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-
-var geojsonLayer = new L.GeoJSON.AJAX("allbuildings.geojson");
-geojsonLayer.addTo(mymap);
-
-
 //The pause/play function
 function pauseButtonClick()
 {
@@ -151,4 +146,4 @@ marker6.on('click', function() {
 })
 L.polyline(MasayeJinguji,
   {color: 'orange'}).addTo(mymap);
-})
+)

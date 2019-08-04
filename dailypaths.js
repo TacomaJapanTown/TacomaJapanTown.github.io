@@ -87,6 +87,11 @@ function pauseButtonClick()
     }
 }
 
+$.getJSON("allbuildings.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(mymap);
+  });
+
 //Harue Osaki's path
 var marker2 = L.Marker.movingMarker(
   HarueOzaki,
@@ -146,4 +151,3 @@ marker6.on('click', function() {
 })
 L.polyline(MasayeJinguji,
   {color: 'orange'}).addTo(mymap);
-)

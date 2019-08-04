@@ -74,17 +74,9 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-$.getJSON("allbuildings.geojson", function(data){
-  var schoolH= L.icon({
-    iconUrl: "marker-icon.png",
-  });
-  L.geoJson(data ,{
-  pointToLayer: function(feature,latlng){
-      var marker = L.marker(latlng, {icon: schoolH});
-      marker.bindPopup("<p>Name: "+feature.properties.Name+"</p>");
-      return marker;
-    }
-  } ).addTo(mymap);
+
+var geojsonLayer = new L.GeoJSON.AJAX("allbuildings.geojson");
+geojsonLayer.addTo(mymap);
 
 
 //The pause/play function

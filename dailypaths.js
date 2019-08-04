@@ -86,9 +86,11 @@ function pauseButtonClick()
             markerList[i].pause();
     }
 }
-
-  var geojsonLayer = new L.GeoJSON.AJAX("pathstops.geojson");
-  geojsonLayer.addTo(mymap);
+// load GeoJSON from an external file
+$.getJSON("pathstops.geojson",function(data){
+  // add GeoJSON layer to the map once the file is loaded
+  L.geoJson(data).addTo(mymap);
+});
 
 //Harue Osaki's path
 var marker2 = L.Marker.movingMarker(

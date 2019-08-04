@@ -74,7 +74,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-L.geoJSON(allbuildings.geojson).addTo(mymap);
+
 
 //The pause/play function
 function pauseButtonClick()
@@ -88,6 +88,20 @@ function pauseButtonClick()
             markerList[i].pause();
     }
 }
+
+$.getJSON("allbuildings.geojson", function(data){
+  //add Icon
+  var schoolH= L.icon({
+    iconUrl: "marker-icon.png",
+  });
+  L.geoJson(data ,{
+  pointToLayer: function(feature,latlng){
+      var marker = L.marker(latlng, {icon: schoolH});
+      marker.bindPopup("<p>SCHOOL_NAME: "+feature.properties.Name+"</p>");
+      return marker;
+
+    }
+  } ).addTo(mymap);
 
 //Harue Osaki's path
 var marker2 = L.Marker.movingMarker(
@@ -148,3 +162,4 @@ marker6.on('click', function() {
 })
 L.polyline(MasayeJinguji,
   {color: 'orange'}).addTo(mymap);
+})

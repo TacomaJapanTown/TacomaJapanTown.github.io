@@ -87,7 +87,7 @@ function pauseButtonClick()
     }
 }
 
-$.getJSON("allbuildings.geojson",function(data){
+$.getJSON("pathstops.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(mymap);
   });

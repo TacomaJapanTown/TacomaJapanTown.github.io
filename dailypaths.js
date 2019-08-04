@@ -88,7 +88,7 @@ function pauseButtonClick()
 }
 $.getJSON("pathstops.geojson",function(data){
   var icon1 = L.icon({
-    iconUrl: 'images/home-15.svg',
+    iconUrl: 'images/home.png',
     iconSize: [30,70]
   });
   L.geoJson(data,{

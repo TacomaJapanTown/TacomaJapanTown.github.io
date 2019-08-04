@@ -86,7 +86,31 @@ function pauseButtonClick()
             markerList[i].pause();
     }
 }
-$.getJSON("pathstops.geojson",function(data){
+$.getJSON("data/pathstopshomes.geojson",function(data){
+  var icon1 = L.icon({
+    iconUrl: 'images/home.png',
+    iconSize: [20,20]
+  });
+  L.geoJson(data,{
+    pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: icon1});
+    }
+  }).addTo(mymap);
+});
+
+$.getJSON("data/pathstopsschools.geojson",function(data){
+  var icon1 = L.icon({
+    iconUrl: 'images/home.png',
+    iconSize: [20,20]
+  });
+  L.geoJson(data,{
+    pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: icon1});
+    }
+  }).addTo(mymap);
+});
+
+$.getJSON("data/jls.geojson",function(data){
   var icon1 = L.icon({
     iconUrl: 'images/home.png',
     iconSize: [20,20]

@@ -75,7 +75,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 $.getJSON("allbuildings.geojson", function(data){
-  //add Icon
   var schoolH= L.icon({
     iconUrl: "marker-icon.png",
   });

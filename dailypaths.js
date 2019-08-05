@@ -104,12 +104,12 @@ $.getJSON("data/jls.geojson",function(data){
         return {color: feature.properties.color};
     },
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><img src=images/jls.jpg width=125em>');
-
-        //<img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='350px'/>
+        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
     }
 }).addTo(mymap);
 //I know it's not very technically efficient to load these seperate jsons but it was the quickest way for me
+//<a href="https://www.thesitewizard.com/" target="_blank">thesitewizard.com</a>
+//<a href="../html-link.htm"><img src="flower.jpg" width="82" height="86" title="White flower" alt="Flower"></a>
 
 //Harue Osaki's moving marker
 var marker1 = L.Marker.movingMarker(
@@ -176,18 +176,6 @@ marker5.on('click', function() { //Adding a popup with their quote describing th
 L.polyline(MasayeJinguji,
   {color: 'orange'}).addTo(mymap);
 
-//Pauses the moving markers
-function pauseButtonClick()
-{
-    var markerList = [marker1, marker2, marker3, marker4, marker5]; //my markers
-    for (i in markerList) //for every marker in the list
-    {
-        if (markerList[i].isPaused()) //If the marker is paused
-            markerList[i].start(); //then start the marker
-        else
-            markerList[i].pause(); //otherwise pause the marker
-    }
-}
 });
 });
 });

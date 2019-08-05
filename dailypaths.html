@@ -64,8 +64,22 @@
 										<div id="mapid"></div>
 								 		<script type="text/javascript" src="MovingMarker.js"></script>
 								    <script type="text/javascript" src="dailypaths.js"></script>
-										<input id="Pause" type="button" value="Pause/Play" onclick="pauseButtonClick()"/>
 
+										<script>
+										//Pauses the moving markers
+										function pauseButtonClick()
+										{
+										    var markerList = [marker1, marker2, marker3, marker4, marker5]; //my markers
+										    for (i in markerList) //for every marker in the list
+										    {
+										        if (markerList[i].isPaused()) //If the marker is paused
+										            markerList[i].start(); //then start the marker
+										        else
+										            markerList[i].pause(); //otherwise pause the marker
+										    }
+										}
+										</script>
+										<input id="Pause" type="button" value="Pause/Play" onclick="pauseButtonClick()"/>
 										<p>
 											Paragraph
 										</p>

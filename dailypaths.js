@@ -124,7 +124,7 @@ $.getJSON("data/jls.geojson",function(data){
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
     }
-    onEachFeature: function (feature, data) {
+    onEachFeature: function (feature, geoJson) {
          layer.bindPopup(feature.properties.Name);
      }
   }).addTo(mymap);

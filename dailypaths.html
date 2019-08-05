@@ -61,25 +61,11 @@
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header>
+										<input id="Pause" type="button" value="Pause/Play" onclick="Pause();"/>
 										<div id="mapid"></div>
 								 		<script type="text/javascript" src="MovingMarker.js"></script>
 								    <script type="text/javascript" src="dailypaths.js"></script>
-
-										<script>
-										//Pauses the moving markers
-										function Pause()
-										{
-										    var markerList = [marker1, marker2, marker3, marker4, marker5];
-										    for (i in markerList)
-										    {
-										        if (markerList[i].isPaused())
-										            markerList[i].start();
-										        else
-										            markerList[i].pause();
-										    }
-										}
-										</script>
-										<input id="Pause" type="button" value="Pause/Play" onclick="Pause();"/>
+										<script type="text/javascript" src="pause.js"></script>
 										<p>
 											Paragraph
 										</p>

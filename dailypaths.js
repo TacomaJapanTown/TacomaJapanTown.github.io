@@ -108,8 +108,6 @@ $.getJSON("data/jls.geojson",function(data){
     }
 }).addTo(mymap);
 //I know it's not very technically efficient to load these seperate jsons but it was the quickest way for me
-//<a href="https://www.thesitewizard.com/" target="_blank">thesitewizard.com</a>
-//<a href="../html-link.htm"><img src="flower.jpg" width="82" height="86" title="White flower" alt="Flower"></a>
 
 //Harue Osaki's moving marker
 var marker1 = L.Marker.movingMarker(

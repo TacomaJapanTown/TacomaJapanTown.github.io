@@ -91,35 +91,29 @@ function pauseButtonClick()
 
 //loading the geojson of homes along the paths
 $.getJSON("data/pathstopshomes.geojson",function(data){
-  var icon1 = L.icon({
-    iconUrl: 'images/home.png', //<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    iconSize: [20,20]
-  });
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
+    }
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.Name);
     }
   }).addTo(mymap);
 });
 
 //loading the geojson of schools along the paths
 $.getJSON("data/pathstopsschools.geojson",function(data){
-  var icon1 = L.icon({
-    iconUrl: 'images/pencil.png', //<div>Icons made by <a href="https://www.flaticon.com/authors/situ-herrera" title="Situ Herrera">Situ Herrera</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    iconSize: [20,20]
-  });
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
+    }
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.Name);
     }
   }).addTo(mymap);
 });
 //loading the geojson of the JLS
 $.getJSON("data/jls.geojson",function(data){
-  var icon1 = L.icon({
-    iconUrl: 'images/pencil.png', //<div>Icons made by <a href="https://www.flaticon.com/authors/situ-herrera" title="Situ Herrera">Situ Herrera</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    iconSize: [30,30]
-  });
   L.geoJson(data, {
     style: function (feature) {
         return {color: feature.properties.color};

@@ -1,1 +1,20 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Address":"1715 S Tacoma Ave","Name":"Japanese Language School","Source":"Morrison (1993), 1933 Polk's City Directory"},"geometry":{"type":"Point","coordinates":[-122.4424506,47.24586406]}}]}
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1715 S Tacoma Ave",
+            "Name":"Japanese Language School",
+            "Source":"Morrison (1993), 1933 Polk's City Directory"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4424506,
+               47.24586406
+            ]
+         }
+      }
+   ]
+}

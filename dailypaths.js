@@ -120,7 +120,7 @@ $.getJSON("data/jls.geojson",function(data){
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><img src=images/jls.jpg>');
 
-        <img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='350px'/>
+        //<img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='350px'/>
     }
 }).addTo(mymap);
 //I know it's not very technically efficient to load these seperate jsons but it was the quickest way for me

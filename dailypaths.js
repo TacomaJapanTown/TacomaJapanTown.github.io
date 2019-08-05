@@ -186,3 +186,6 @@ marker6.on('click', function() { //Adding a popup with their quote describing th
 //Masaye Jinguji's polyline
 L.polyline(MasayeJinguji,
   {color: 'orange'}).addTo(mymap);
+});
+});
+});

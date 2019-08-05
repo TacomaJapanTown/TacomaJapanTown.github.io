@@ -118,7 +118,7 @@ $.getJSON("data/jls.geojson",function(data){
         return {color: feature.properties.color};
     },
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><img src=images/jls.jpg>');
+        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><img src=images/jls.jpg width=10em>');
 
         //<img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='350px'/>
     }

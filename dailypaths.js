@@ -98,7 +98,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
-    marker.bindPopup(feature.properties.Name);
+    marker.bindPopup(feature.properties.Name).openPopup();
       return marker;
     }
   }).addTo(mymap);
@@ -113,7 +113,7 @@ $.getJSON("data/pathstopsschools.geojson",function(data){
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
-    marker.bindPopup(feature.properties.Name);
+    marker.bindPopup(feature.properties.Name).openPopup();
     return marker;
     }
   }).addTo(mymap);
@@ -127,7 +127,7 @@ $.getJSON("data/jls.geojson",function(data){
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
-    marker.bindPopup(feature.properties.Name);
+    marker.bindPopup(feature.properties.Name).openPopup();
       return marker;
     }
   }).addTo(mymap);

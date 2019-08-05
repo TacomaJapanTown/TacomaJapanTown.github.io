@@ -91,27 +91,25 @@ function pauseButtonClick()
 
 //loading the geojson of homes along the paths
 $.getJSON("data/pathstopshomes.geojson",function(data){
-  L.geoJson(data,{
-    pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
-	  return L.marker(latlng,{icon: icon1});
-    }
+  L.geoJson(data, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    },
     onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.Name);
     }
-  }).addTo(mymap);
-});
+}).addTo(mymap);
 
 //loading the geojson of schools along the paths
 $.getJSON("data/pathstopsschools.geojson",function(data){
-  L.geoJson(data,{
-    pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
-	  return L.marker(latlng,{icon: icon1});
-    }
+  L.geoJson(data, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    },
     onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.Name);
     }
-  }).addTo(mymap);
-});
+}).addTo(mymap);
 //loading the geojson of the JLS
 $.getJSON("data/jls.geojson",function(data){
   L.geoJson(data, {

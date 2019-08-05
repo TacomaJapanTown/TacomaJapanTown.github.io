@@ -61,12 +61,14 @@
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header>
-										<input id="Pause" type="button" value="Pause/Play" onclick="Pause();"/>
-										<div id="mapid"></div>
+										<input id="Pause" type="button" value="Pause/Play" onclick="pauseButtonClick()"/>
+								    <div id="mapid"></div>
+
+								    <!--Adding the script for the MovingMarker Plugin-->
 								 		<script type="text/javascript" src="MovingMarker.js"></script>
-								    <script type="text/javascript" src="dailypaths.js"></script>
-										<script type="text/javascript" src="pause.js"></script>
-										<input id="Pause" type="button" value="Pause/Play" onclick="Pause();"/>
+								    <!--First call my internal JS file before calling outside scripts. I may need to fiddle with the order of the external scripts to get things right.-->
+								    <script type="text/javascript" src="markers.js"></script>
+										<script type="text/javascript" src="dailypaths.js"></script>
 										<p>
 											Paragraph
 										</p>

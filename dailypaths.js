@@ -98,8 +98,6 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
-    marker.bindPopup(feature.properties.Name).openPopup();
-    //return marker;
     }
   }).addTo(mymap);
 });
@@ -112,12 +110,8 @@ $.getJSON("data/pathstopsschools.geojson",function(data){
   });
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
-	  //return L.marker(latlng,{icon: icon1});
-    //marker.bindPopup(feature.properties.Name).openPopup();
-    //return marker;
+	  return L.marker(latlng,{icon: icon1});
     }
-    onEachFeature: function( feature, layer ){
-    layer.bindPopup( "<strong>" + feature.properties.Name + "</strong>")
   }).addTo(mymap);
 });
 //loading the geojson of the JLS
@@ -129,9 +123,10 @@ $.getJSON("data/jls.geojson",function(data){
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
 	  return L.marker(latlng,{icon: icon1});
-    marker.bindPopup(feature.properties.Name).openPopup();
-    //return marker;
     }
+    onEachFeature: function (feature, layer) {
+         layer.bindPopup(feature.properties.Name);
+     }
   }).addTo(mymap);
 });
 //I know it's not very technically efficient to load these seperate jsons but it was the quickest way for me

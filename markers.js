@@ -1,5 +1,7 @@
+//Seperate file to prevent a bug in Chrome
 
-//Student paths
+
+
 //These coordinates are the points the markers and polylines follow
 var HarueOzaki = [
   [47.248295, -122.440435], //Home

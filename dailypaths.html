@@ -67,7 +67,7 @@
 
 										<script>
 										//Pauses the moving markers
-										function pauseButtonClick()
+										function Pause()
 										{
 										    var markerList = [marker1, marker2, marker3, marker4, marker5];
 										    for (i in markerList)
@@ -75,11 +75,11 @@
 										        if (markerList[i].isPaused())
 										            markerList[i].start();
 										        else
-										            markerList[i].pause(); 
+										            markerList[i].pause();
 										    }
 										}
 										</script>
-										<input id="Pause" type="button" value="Pause/Play" onclick="pauseButtonClick();"/>
+										<input id="Pause" type="button" value="Pause/Play" onclick="Pause();"/>
 										<p>
 											Paragraph
 										</p>

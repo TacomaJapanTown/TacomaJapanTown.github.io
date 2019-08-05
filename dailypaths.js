@@ -109,7 +109,6 @@ $.getJSON("data/pathstopsschools.geojson",function(data){
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p>');
     }
-    marker1.bindPopup( "<img src=" + icon_url + "/> Current temperature in " + location + " is: " + temp_f)
 }).addTo(mymap);
 
 //loading the geojson of the JLS

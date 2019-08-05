@@ -110,6 +110,7 @@ $.getJSON("data/pathstopsschools.geojson",function(data){
         layer.bindPopup(feature.properties.Name);
     }
 }).addTo(mymap);
+
 //loading the geojson of the JLS
 $.getJSON("data/jls.geojson",function(data){
   L.geoJson(data, {
@@ -186,6 +187,6 @@ marker5.on('click', function() { //Adding a popup with their quote describing th
 //Masaye Jinguji's polyline
 L.polyline(MasayeJinguji,
   {color: 'orange'}).addTo(mymap);
-//});
-//});
-//});
+});
+});
+});

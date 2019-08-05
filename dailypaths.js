@@ -120,15 +120,14 @@ $.getJSON("data/jls.geojson",function(data){
     iconUrl: 'images/pencil.png', //<div>Icons made by <a href="https://www.flaticon.com/authors/situ-herrera" title="Situ Herrera">Situ Herrera</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     iconSize: [30,30]
   });
-  L.geoJson(data,{
-    pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
-	  return L.marker(latlng,{icon: icon1});
-    }
+  L.geoJson(data, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    },
     onEachFeature: function (feature, layer) {
-         layer.bindPopup(feature.properties.Name);
-     }
-  }).addTo(mymap);
-});
+        layer.bindPopup(feature.properties.Name);
+    }
+}).addTo(mymap);
 //I know it's not very technically efficient to load these seperate jsons but it was the quickest way for me
 
 //Harue Osaki's moving marker

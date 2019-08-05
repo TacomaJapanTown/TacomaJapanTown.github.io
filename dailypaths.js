@@ -11,7 +11,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 //The pause/play function
 function pauseButtonClick()
 {
-  var markerList = [marker2, marker3, marker4, marker5, marker6];
+  var markerList = [marker1, marker2, marker3, marker4, marker5];
   for (i in markerList)
   {
     if (markerList[i].isPaused())

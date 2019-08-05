@@ -107,7 +107,7 @@ $.getJSON("data/pathstopsschools.geojson",function(data){
         return {color: feature.properties.color};
     },
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: 'feature.properties.Source+'</p>');
+        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p>');
     }
 }).addTo(mymap);
 
@@ -118,7 +118,7 @@ $.getJSON("data/jls.geojson",function(data){
         return {color: feature.properties.color};
     },
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: 'feature.properties.Source+'</p>');
+        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p>');
     }
 }).addTo(mymap);
 //I know it's not very technically efficient to load these seperate jsons but it was the quickest way for me

@@ -75,20 +75,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-//The pause/play function fir my button
-//Pauses the moving markers
-function pauseButtonClick()
-{
-    var markerList = [marker1, marker2, marker3, marker4, marker5]; //my markers
-    for (i in markerList) //for every marker in the list
-    {
-        if (markerList[i].isPaused()) //If the marker is paused
-            markerList[i].start(); //then start the marker
-        else
-            markerList[i].pause(); //otherwise pause the marker
-    }
-}
-
 //loading the geojson of homes along the paths
 $.getJSON("data/pathstopshomes.geojson",function(data){
   L.geoJson(data, {
@@ -118,7 +104,7 @@ $.getJSON("data/jls.geojson",function(data){
         return {color: feature.properties.color};
     },
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><img src=images/jls.jpg width=50em>');
+        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><img src=images/jls.jpg width=80em>');
 
         //<img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='350px'/>
     }
@@ -189,6 +175,19 @@ marker5.on('click', function() { //Adding a popup with their quote describing th
 //Masaye Jinguji's polyline
 L.polyline(MasayeJinguji,
   {color: 'orange'}).addTo(mymap);
+
+//Pauses the moving markers
+function pauseButtonClick()
+{
+    var markerList = [marker1, marker2, marker3, marker4, marker5]; //my markers
+    for (i in markerList) //for every marker in the list
+    {
+        if (markerList[i].isPaused()) //If the marker is paused
+            markerList[i].start(); //then start the marker
+        else
+            markerList[i].pause(); //otherwise pause the marker
+    }
+}
 });
 });
 });

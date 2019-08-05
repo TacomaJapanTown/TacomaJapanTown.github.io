@@ -112,10 +112,12 @@ $.getJSON("data/pathstopsschools.geojson",function(data){
   });
   L.geoJson(data,{
     pointToLayer: function(feature,latlng){ //Need to make it a layer so it can be manipulated
-	  return L.marker(latlng,{icon: icon1});
-    marker.bindPopup(feature.properties.Name).openPopup();
+	  //return L.marker(latlng,{icon: icon1});
+    //marker.bindPopup(feature.properties.Name).openPopup();
     //return marker;
     }
+    onEachFeature: function( feature, layer ){
+    layer.bindPopup( "<strong>" + feature.properties.Name + "</strong>")
   }).addTo(mymap);
 });
 //loading the geojson of the JLS

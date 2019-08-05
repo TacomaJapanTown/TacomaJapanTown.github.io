@@ -41,7 +41,7 @@
             "Address":"1511 Market St",
             "Name":"Ozaki Home",
             "Source":"Morrison (1993) p57, Harue Ozaki Interview",
-            "Notes":" ",
+            "Notes":"",
             "Type":"Home"
          },
          "geometry":{
@@ -57,8 +57,8 @@
          "properties":{
             "Address":"1510 Fawcett Ave",
             "Name":"Mieko Home",
-            "Source":"June Mieko Interview, Morrison (1993) p59: Omori Home",
-            "Notes":"",
+            "Source":"June Mieko Interview",
+            "Notes":"Morrison (1993) on p59 lists the Omori Home",
             "Type":"Home"
          },
          "geometry":{
@@ -74,8 +74,8 @@
          "properties":{
             "Address":"St Paul Ave",
             "Name":"St Paul Lumber Company House 11",
-            "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Source":"1926 Metseker Atlas, Fumi Sato Interview",
+            "Notes":"At a different time, the family lived in house 14. ",
             "Type":"Home"
          },
          "geometry":{

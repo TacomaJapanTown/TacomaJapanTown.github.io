@@ -79,7 +79,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 //Pauses the moving markers
 function pauseButtonClick()
 {
-    var markerList = [marker2, marker3, marker4, marker5, marker6]; //my markers
+    var markerList = [marker1, marker2, marker3, marker4, marker5]; //my markers
     for (i in markerList) //for every marker in the list
     {
         if (markerList[i].isPaused()) //If the marker is paused
@@ -123,7 +123,7 @@ $.getJSON("data/jls.geojson",function(data){
 //I know it's not very technically efficient to load these seperate jsons but it was the quickest way for me
 
 //Harue Osaki's moving marker
-var marker2 = L.Marker.movingMarker(
+var marker1 = L.Marker.movingMarker(
   HarueOzaki,
 8000, {autostart: true, loop: true}).addTo(mymap);
 marker2.addStation(5, 2000); //Adds a stop in the path
@@ -136,7 +136,7 @@ L.polyline(HarueOzaki,
   {color: 'green'}).addTo(mymap);
 
 //June Mieko's moving marker
-var marker3 = L.Marker.movingMarker(
+var marker2 = L.Marker.movingMarker(
   JuneMieko,
 8000, {autostart: true, loop: true}).addTo(mymap);
 marker3.addStation(6, 2000); //Adds a stop in the path
@@ -149,7 +149,7 @@ L.polyline(JuneMieko,
   {color: 'blue'}).addTo(mymap);
 
 //Fumi Sato's moving marker
-var marker4 = L.Marker.movingMarker(
+var marker3 = L.Marker.movingMarker(
   FumiSato,
 8000, {autostart: true, loop: true}).addTo(mymap);
 marker4.addStation(9, 2000); //Adds a stop in the path
@@ -162,7 +162,7 @@ L.polyline(FumiSato,
   {color: 'red'}).addTo(mymap);
 
 //Ryo Munekata's moving marker
-var marker5 = L.Marker.movingMarker(
+var marker4 = L.Marker.movingMarker(
   RyoMunekata,
 8000, {autostart: true, loop: true}).addTo(mymap);
 marker5.addStation(8, 2000); //Adds a stop in the path
@@ -175,7 +175,7 @@ L.polyline(RyoMunekata,
   {color: 'black'}).addTo(mymap);
 
 //Masaye Jinguji's moving marker
-var marker6 = L.Marker.movingMarker(
+var marker5 = L.Marker.movingMarker(
   MasayeJinguji,
 8000, {autostart: true, loop: true}).addTo(mymap);
 marker6.addStation(3, 2000); //Adds a stop in the path

@@ -39,7 +39,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
         return {color: feature.properties.color};
       },
       onEachFeature: function (feature, layer) {
-        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature,properties.Photo+'</p>');
+        layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
       }
     }).addTo(mymap);
 

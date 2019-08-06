@@ -79,7 +79,7 @@ var marker1 = L.Marker.movingMarker(
   L.polyline(HarueOzaki,
     {color: '#00441B', opacity: '0.8'
   }).addTo(mymap);
-
+https://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
   //June Mieko's moving marker
   var marker2 = L.Marker.movingMarker(
     JuneMieko,

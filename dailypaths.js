@@ -55,18 +55,15 @@ var orange = L.icon({
 var jsonIcon = L.icon({
   iconUrl: 'images/black-circle.png',
   iconSize: [20, 20],
-});//fill with json icon info to test if this syntax works
-//and then replace with the black circle stuff
+});
 
 //Putting the legend on the mao
 var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (mymap) {
-
     var div = L.DomUtil.create('div', 'info legend');
     div.innerHTML = "<img src=images/legend.jpg style='width: 15em;'></img>";
     return div;
-};
-legend.addTo(mymap);
+};legend.addTo(mymap);
 
 //loading the geojson of homes along the paths
 $.getJSON("data/pathstopshomes.geojson",function(data){

@@ -67,7 +67,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
     }, pointToLayer: function (feature, latlng) {
-      var marker = L.marker(latlng,{icon: leafIcon});
+      var marker = L.marker(latlng);
       return marker;
     }
   }).addTo(mymap);
@@ -78,7 +78,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
       }, pointToLayer: function (feature, latlng) {
-        var marker = L.marker(latlng,{icon: leafIcon});
+        var marker = L.marker(latlng);
         return marker;
       }
     }).addTo(mymap);
@@ -89,7 +89,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
         }, pointToLayer: function (feature, latlng) {
-          var marker = L.marker(latlng,{icon: leafIcon});
+          var marker = L.marker(latlng);
           return marker;
         }
       }).addTo(mymap);

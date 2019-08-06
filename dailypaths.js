@@ -1,3 +1,8 @@
+//Special thanks to these tutorials and tools:
+  //http://duspviz.mit.edu/web-map-workshop/map-symbolization/
+  //http://maptimediliman.github.io/leaflet-intro/
+  //geojson.io
+
 //Making the map
 var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
 //Basemap
@@ -21,23 +26,30 @@ function pauseButtonClick()
   }
 }
 
+var leafIcon = L.icon({
+	iconUrl: 'images/leaf-green.png',
+	shadowUrl: 'images/leaf-shadow.png',
+	iconSize: [36,36],
+	shadowSize: [36,36],
+	iconAnchor: [18,18],
+	shadowAnchor: [18,18],
+	popupAnchor: [0,-6]
+});
+
 //loading the geojson of homes along the paths
 $.getJSON("data/pathstopshomes.geojson",function(data){
   L.geoJson(data, {
-    style: function (feature) {
-      return {color: feature.properties.color};
-    },
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
-    }
+    }  pointToLayer: function (feature, latlng) {
+            var marker = L.marker(latlng,{icon: leafIcon});
+            return marker;
+        }
   }).addTo(mymap);
 
   //loading the geojson of schools along the paths
   $.getJSON("data/pathstopsschools.geojson",function(data){
     L.geoJson(data, {
-      style: function (feature) {
-        return {color: feature.properties.color};
-      },
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
       }
@@ -46,14 +58,11 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
     //loading the geojson of the JLS
     $.getJSON("data/jls.geojson",function(data){
       L.geoJson(data, {
-        style: function (feature) {
-          return {color: feature.properties.color};
-        },
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
         }
       }).addTo(mymap);
 
     })
-})
+  })
 })

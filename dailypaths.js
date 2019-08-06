@@ -52,17 +52,19 @@ var orange = L.icon({
   iconSize: [20, 20],
 });
 
-var blackFill = L.icon({
-  iconUrl: 'images/black-fill.png',
+var leafIcon = L.icon({
+  iconUrl: 'images/leaf-green.png',
   iconSize: [20, 20],
-})
+});//fill with leaf icon info to test if this syntax works
+//and then replace with the black circle stuff
 
 //Putting the legend on the mao
 var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (mymap) {
-  var div = L.DomUtil.create('div', 'info legend');
-  div.innerHTML = "<img src=images/legend.jpg style='width: 15em;'></img>";
-  return div;
+
+    var div = L.DomUtil.create('div', 'info legend');
+    div.innerHTML = "<img src=images/legend.jpg style='width: 15em;'></img>";
+    return div;
 };
 legend.addTo(mymap);
 
@@ -71,8 +73,8 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
-    }, pointToLayer: function (feature, latlng,{icon: blackFill}) {
-      var marker = L.marker(latlng);
+    }, pointToLayer: function (feature, latlng) {
+      var marker = L.marker(latlng,{icon: leafIcon});
       return marker;
     }
   }).addTo(mymap);
@@ -82,8 +84,8 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
     L.geoJson(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
-      }, pointToLayer: function (feature, latlng,{icon: blackFill}) {
-        var marker = L.marker(latlng);
+      }, pointToLayer: function (feature, latlng) {
+        var marker = L.marker(latlng,{icon: leafIcon});
         return marker;
       }
     }).addTo(mymap);
@@ -94,7 +96,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
         }, pointToLayer: function (feature, latlng) {
-          var marker = L.marker(latlng,{icon: blackFill});
+          var marker = L.marker(latlng,{icon: leafIcon});
           return marker;
         }
       }).addTo(mymap);

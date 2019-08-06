@@ -53,7 +53,7 @@ var orange = L.icon({
 });
 
 var jsonIcon = L.icon({
-  iconUrl: 'images/black-fill.png',
+  iconUrl: 'images/black-circle.png',
   iconSize: [20, 20],
 });//fill with json icon info to test if this syntax works
 //and then replace with the black circle stuff

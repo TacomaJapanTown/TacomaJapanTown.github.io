@@ -67,7 +67,7 @@ var MasayeJinguji = [
 ];
 
 //Harue Osaki's moving marker
-var marker1 = L.Marker.movingMarker(
+var marker1 = L.Marker.movingMarker({icon: leafIcon}
   HarueOzaki,
 50000, {autostart: true, loop: true}).addTo(mymap);
 marker1.addStation(5, 4000); //Adds a stop in the path
@@ -82,7 +82,7 @@ L.polyline(HarueOzaki,
 //June Mieko's moving marker
 var marker2 = L.Marker.movingMarker(
   JuneMieko,
-50000, {autostart: true, loop: true}).addTo(mymap);
+50000, {autostart: true, loop: true, icon: leafIcon}).addTo(mymap);
 marker2.addStation(6, 4000); //Adds a stop in the path
 marker2.on('click', function() { //Adding a popup with their quote describing their path
     marker2.bindPopup('<b>"we would walk down the street, and we would cross the street, and we would walk a little bit more, and we would cross the street.  I mean, we would do this like a lot of times, and I said. Dad, why are we doing this?  And he would never say anything. And so, it wasn’t until years and years later that I realized that because they would spit at us, or because they would call us names, or confront my father, that he just didn’t want this, and so he just avoided it."<br>-June Mieko, January 27th, 2005</b>', {closeOnClick: false})
@@ -95,7 +95,7 @@ L.polyline(JuneMieko,
 //Fumi Sato's moving marker
 var marker3 = L.Marker.movingMarker(
   FumiSato,
-50000, {autostart: true, loop: true}).addTo(mymap);
+50000, {autostart: true, loop: true} {icon: leafIcon}).addTo(mymap);
 marker3.addStation(9, 4000); //Adds a stop in the path
 marker3.on('click', function() { //Adding a popup with their quote describing their path
     marker3.bindPopup('<b>"I remember when we went to high school we took a streetcar. But then we’d go to Japanese school afterwards, and I knew my girlfriend who lived in town, she and I would walk to her house, and her mother would have baked yams on those stoves, you know, and we would have that and then go out to Japanese school"<br>-Fumi Sato, January 27th, 2005</b>', {closeOnClick: false})

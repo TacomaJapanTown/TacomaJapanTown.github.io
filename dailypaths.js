@@ -38,10 +38,10 @@ var leafIcon = L.icon({
 
 //loading the geojson of homes along the paths
 $.getJSON("data/pathstopshomes.geojson",function(data){
-  L.geoJson(data, {
+  pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
-    }  pointToLayer: function (feature, latlng) {
+    }, pointToLayer: function (feature, latlng) {
             var marker = L.marker(latlng,{icon: leafIcon});
             return marker;
         }

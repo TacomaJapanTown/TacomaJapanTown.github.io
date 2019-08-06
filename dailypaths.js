@@ -13,7 +13,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-//The pause/play function
+//The pause/play function for the button
 function pauseButtonClick()
 {
   var markerList = [marker1, marker2, marker3, marker4, marker5];
@@ -26,15 +26,40 @@ function pauseButtonClick()
   }
 }
 
-var leafIcon = L.icon({
-  iconUrl: 'images/leaf-green.png',
-  shadowUrl: 'images/leaf-shadow.png',
-  iconSize:     [38, 95], // size of the icon
-  shadowSize:   [50, 64], // size of the shadow
-  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-  shadowAnchor: [4, 62],  // the same for the shadow
-  popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+//Images by Dave Gandy from https://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1 (I believe this is actually a Font Awesome icon)
+var green = L.icon({
+  iconUrl: 'images/green.png',
+  iconSize: [20, 20],
 });
+
+var blue = L.icon({
+  iconUrl: 'images/blue.png',
+  iconSize: [20, 20],
+});
+
+var purple = L.icon({
+  iconUrl: 'images/purple.png',
+  iconSize: [20, 20],
+});
+
+var red = L.icon({
+  iconUrl: 'images/red.png',
+  iconSize: [20, 20],
+});
+
+var orange = L.icon({
+  iconUrl: 'images/orange.png',
+  iconSize: [20, 20],
+});
+
+//Putting the legend on the mao
+var legend = L.control({position: 'bottomleft'});
+legend.onAdd = function (mymap) {
+  var div = L.DomUtil.create('div', 'info legend');
+  div.innerHTML = "<img src=images/legend.jpg style='width: 15em;'></img>";
+  return div;
+};
+legend.addTo(mymap);
 
 //loading the geojson of homes along the paths
 $.getJSON("data/pathstopshomes.geojson",function(data){

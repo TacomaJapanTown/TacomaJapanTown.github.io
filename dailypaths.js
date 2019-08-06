@@ -1,6 +1,6 @@
 //Special thanks to these tutorials and tools:
 //http://duspviz.mit.edu/web-map-workshop/map-symbolization/
-//http://maptimediliman.github.io/leaflet-intro/
+//http://maptimediliman.github.io/jsonlet-intro/
 //geojson.io
 
 //Making the map
@@ -52,10 +52,10 @@ var orange = L.icon({
   iconSize: [20, 20],
 });
 
-var leafIcon = L.icon({
-  iconUrl: 'images/leaf-green.png',
+var jsonIcon = L.icon({
+  iconUrl: 'images/black-fill.png',
   iconSize: [20, 20],
-});//fill with leaf icon info to test if this syntax works
+});//fill with json icon info to test if this syntax works
 //and then replace with the black circle stuff
 
 //Putting the legend on the mao
@@ -74,7 +74,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
     }, pointToLayer: function (feature, latlng) {
-      var marker = L.marker(latlng,{icon: leafIcon});
+      var marker = L.marker(latlng,{icon: jsonIcon});
       return marker;
     }
   }).addTo(mymap);
@@ -85,7 +85,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
       }, pointToLayer: function (feature, latlng) {
-        var marker = L.marker(latlng,{icon: leafIcon});
+        var marker = L.marker(latlng,{icon: jsonIcon});
         return marker;
       }
     }).addTo(mymap);
@@ -96,7 +96,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
         }, pointToLayer: function (feature, latlng) {
-          var marker = L.marker(latlng,{icon: leafIcon});
+          var marker = L.marker(latlng,{icon: jsonIcon});
           return marker;
         }
       }).addTo(mymap);

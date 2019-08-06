@@ -52,6 +52,11 @@ var orange = L.icon({
   iconSize: [20, 20],
 });
 
+var blackFill = L.icon({
+  iconUrl: 'images/black-fill.png',
+  iconSize: [20, 20],
+})
+
 //Putting the legend on the mao
 var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (mymap) {
@@ -66,7 +71,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
-    }, pointToLayer: function (feature, latlng) {
+    }, pointToLayer: function (feature, latlng,{icon: blackFill}) {
       var marker = L.marker(latlng);
       return marker;
     }
@@ -77,7 +82,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
     L.geoJson(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
-      }, pointToLayer: function (feature, latlng) {
+      }, pointToLayer: function (feature, latlng,{icon: blackFill}) {
         var marker = L.marker(latlng);
         return marker;
       }
@@ -89,7 +94,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
         }, pointToLayer: function (feature, latlng) {
-          var marker = L.marker(latlng);
+          var marker = L.marker(latlng,{icon: blackFill});
           return marker;
         }
       }).addTo(mymap);

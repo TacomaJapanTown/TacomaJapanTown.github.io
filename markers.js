@@ -67,9 +67,9 @@ var MasayeJinguji = [
 ];
 
 //Harue Osaki's moving marker
-var marker1 = L.Marker.movingMarker({icon: leafIcon}
+var marker1 = L.Marker.movingMarker(
   HarueOzaki,
-50000, {autostart: true, loop: true}).addTo(mymap);
+50000, {autostart: true, loop: true, icon: leafIcon}).addTo(mymap);
 marker1.addStation(5, 4000); //Adds a stop in the path
 marker1.on('click', function() { //Adding a popup with their quote describing their path
     marker1.bindPopup('<b>"I went home with Mom. Sometimes we took the Tacoma streetcar down 17th street. And we’d walk down that street to the streetcar and then rode it to the end. And then walked from there through the park a little bit to our house."<br>-Harue Ozaki, September 15, 2004</b>', {closeOnClick: false})
@@ -95,7 +95,7 @@ L.polyline(JuneMieko,
 //Fumi Sato's moving marker
 var marker3 = L.Marker.movingMarker(
   FumiSato,
-50000, {autostart: true, loop: true} {icon: leafIcon}).addTo(mymap);
+50000, {autostart: true, loop: true, icon: leafIcon}).addTo(mymap);
 marker3.addStation(9, 4000); //Adds a stop in the path
 marker3.on('click', function() { //Adding a popup with their quote describing their path
     marker3.bindPopup('<b>"I remember when we went to high school we took a streetcar. But then we’d go to Japanese school afterwards, and I knew my girlfriend who lived in town, she and I would walk to her house, and her mother would have baked yams on those stoves, you know, and we would have that and then go out to Japanese school"<br>-Fumi Sato, January 27th, 2005</b>', {closeOnClick: false})

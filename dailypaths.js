@@ -26,35 +26,39 @@ function pauseButtonClick()
   }
 }
 
-//Images by Dave Gandy from https://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1 (I believe this is actually a Font Awesome icon)
 var green = L.icon({
-  iconUrl: 'images/green.png',
-  iconSize: [20, 20],
+  iconUrl: 'images/green.png', //icon from ttps://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
+  iconSize: [15, 15],
 });
 
 var blue = L.icon({
-  iconUrl: 'images/blue.png',
-  iconSize: [20, 20],
+  iconUrl: 'images/blue.png', //icon from ttps://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
+  iconSize: [15, 15],
 });
 
 var purple = L.icon({
-  iconUrl: 'images/purple.png',
-  iconSize: [20, 20],
+  iconUrl: 'images/purple.png', //icon from ttps://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
+  iconSize: [15, 15],
 });
 
 var red = L.icon({
-  iconUrl: 'images/red.png',
-  iconSize: [20, 20],
+  iconUrl: 'images/red.png', //icon from ttps://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
+  iconSize: [15, 15],
 });
 
 var orange = L.icon({
-  iconUrl: 'images/orange.png',
-  iconSize: [20, 20],
+  iconUrl: 'images/orange.png', //icon from ttps://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
+  iconSize: [15, 15],
 });
 
-var jsonIcon = L.icon({
-  iconUrl: 'images/black-circle.png',
-  iconSize: [20, 20],
+var schools = L.icon({
+  iconUrl: 'images/schools.png', //icon from https://mapicons.mapsmarker.com/
+  iconSize: [15, 15],
+});
+
+var homes = L.icon({
+  iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
+  iconSize: [15, 15],
 });
 
 //Putting the legend on the mao
@@ -71,7 +75,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
     }, pointToLayer: function (feature, latlng) {
-      var marker = L.marker(latlng,{icon: jsonIcon});
+      var marker = L.marker(latlng,{icon: homes});
       return marker;
     }
   }).addTo(mymap);
@@ -82,7 +86,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
       }, pointToLayer: function (feature, latlng) {
-        var marker = L.marker(latlng,{icon: jsonIcon});
+        var marker = L.marker(latlng,{icon: schools});
         return marker;
       }
     }).addTo(mymap);

@@ -58,7 +58,7 @@ var schools = L.icon({
 
 var homes = L.icon({
   iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
+  iconSize: [30, 35], //1a77c9
 });
 
 //Putting the legend on the mao

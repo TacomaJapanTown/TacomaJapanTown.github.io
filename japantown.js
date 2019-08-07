@@ -17,7 +17,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 //Images by Dave Gandy from https://www.flaticon.com/free-icon/square-silhouette_8690#term=square&page=4&position=43 (I believe this is actually a Font Awesome icon)
 var jsonIcon = L.icon({
   iconUrl: 'images/square.png',
-  iconSize: [20, 20],
+  iconSize: [10, 10],
 });
 
 $.getJSON("data/allbuildings.geojson",function(data){

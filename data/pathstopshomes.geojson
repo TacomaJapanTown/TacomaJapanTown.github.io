@@ -39,9 +39,9 @@
          "type":"Feature",
          "properties":{
             "Address":"1511 Market St",
-            "Name":"Ozaki Home",
-            "Source":"Morrison (1993) p57, Harue Ozaki Interview",
-            "Notes":"",
+            "Name":"Kawano Home",
+            "Source":"Morrison (1993) p57, Harue Kawano Interview",
+            "Notes":"'And I had, grew up with, uh, five broth-, five siblings. It was really six, but one little girl died when I was only an infant. So there were five children, three boys and two girls. Uh, three girls and two boys. And a mother and father.' -Harue Kawano, March 11, 2005",
             "Type":"Home"
          },
          "geometry":{

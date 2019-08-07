@@ -14,13 +14,13 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 
-//Images by Dave Gandy from https://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1 (I believe this is actually a Font Awesome icon)
+//Images by Dave Gandy from https://www.flaticon.com/free-icon/square-silhouette_8690#term=square&page=4&position=43 (I believe this is actually a Font Awesome icon)
 var jsonIcon = L.icon({
-  iconUrl: 'images/black-circle.png',
+  iconUrl: 'images/square.png',
   iconSize: [20, 20],
 });
 
-$.getJSON("data/pathstopshomes.geojson",function(data){
+$.getJSON("data/allbuildings.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');

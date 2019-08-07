@@ -6,8 +6,8 @@
          "properties":{
             "Address":"1131 Market St",
             "Name":"Jinguji Home",
-            "Source":"Masaye Jinguji Interview, Morrison (1993) p58: 1728 Fawcett",
-            "Notes":"Masaye says it was across the street from the Tofu Store on 1131 Market St",
+            "Source":"Masaye Jinguji Interview, Morrison (1993, 58): 1728 Fawcett",
+            "Notes":"Masaye says the house was across the street from the Tofu Store on 1131 Market St.",
             "Type":"Home"
          },
          "geometry":{
@@ -23,7 +23,7 @@
          "properties":{
             "Address":"1317 1/2 Broadway St",
             "Name":"New Tacoma Hotel, Watanabe Dentist Office, and Warashima Dentist Office",
-            "Source":"Morrison (1993) p56, Ito (1926), Ryo Munekata Interview, 1929 Polk's City Directory p867",
+            "Source":"Morrison (1993, 56) Ito (1926), Ryo Munekata Interview, and Polk's 1929 Tacoma City Directory page 867",
             "Notes":"'We moved to another hotel between 13th and 15th on Broadway, Called the New Tacoma Hotel, which is directly across the street from the present Sheraton Hotel'-Ryo Munekata",
             "Type":"Home"
          },
@@ -40,7 +40,7 @@
          "properties":{
             "Address":"1511 Market St",
             "Name":"Kawano Home",
-            "Source":"Morrison (1993) p57, Harue Kawano Interview",
+            "Source":"Morrison (1993, 57), Harue Kawano Interview",
             "Notes":"'And I had, grew up with, uh, five broth-, five siblings. It was really six, but one little girl died when I was only an infant. So there were five children, three boys and two girls. Uh, three girls and two boys. And a mother and father.' -Harue Kawano, March 11, 2005",
             "Type":"Home"
          },
@@ -58,7 +58,7 @@
             "Address":"1510 Fawcett Ave",
             "Name":"Mieko Home",
             "Source":"June Mieko Interview",
-            "Notes":"Morrison (1993) on p59 lists the Omori Home",
+            "Notes":"Morrison (1993, 59) lists the Omori family at this address.",
             "Type":"Home"
          },
          "geometry":{

@@ -53,7 +53,7 @@ var orange = L.icon({
 
 var schools = L.icon({
   iconUrl: 'images/schools.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [20, 25],
+  iconSize: [30, 35],
 });
 
 var homes = L.icon({

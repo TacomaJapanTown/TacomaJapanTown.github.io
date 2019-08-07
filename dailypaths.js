@@ -53,12 +53,12 @@ var orange = L.icon({
 
 var schools = L.icon({
   iconUrl: 'images/schools.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [15, 15],
+  iconSize: [20, 25],
 });
 
 var homes = L.icon({
   iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [15, 15],
+  iconSize: [30, 35],
 });
 
 //Putting the legend on the mao
@@ -97,7 +97,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
         }, pointToLayer: function (feature, latlng) {
-          var marker = L.marker(latlng,{icon: jsonIcon});
+          var marker = L.marker(latlng,{icon: schools});
           return marker;
         }
       }).addTo(mymap);

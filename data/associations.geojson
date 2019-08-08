@@ -40,6 +40,24 @@
       {
          "type":"Feature",
          "properties":{
+            "Address":"1354 Court C",
+            "Name":"Laundry Union",
+            "Source":"Watanabe (1986, 62), Ryo Munekata Interview",
+            "Notes":"The laundry union had a baseball team. Photo is from Magden, Ron. (1879-2003). Item Name (Box 2, Folder 2). Ron Magden Collection, Acc. 5185-003, Special Collections, University of Washington Libraries",
+            "Type":"Business",
+            "Photo":"<img src=images/unionlaundry.JPG width=200em>"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4402093,
+               47.249822
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
             "Address":"1954 S Tacoma Ave",
             "Name":"Japanese Association of Tacoma",
             "Source":"Polk's 1933 Tacoma City Directory page 350",

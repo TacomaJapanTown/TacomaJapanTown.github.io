@@ -7,7 +7,7 @@
             "Address":"111 N E Street",
             "Name":"Stadium High School",
             "Source":"2019 Address",
-            "Notes":0,
+            "Notes":"None",
             "Type":"School",
             "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/13891/rec/10 target=_blank><img src=\"images/stadium.jpg\" width=\"150em\">"
          },
@@ -63,7 +63,7 @@
             "Source":"Mary Hanneman",
             "Notes":"The language school moved twice. This was the first location.",
             "Type":"School",
-            "Photo":0
+            "Photo":
          },
          "geometry":{
             "type":"Point",
@@ -81,7 +81,7 @@
             "Source":"Watanabe (1986, 68)",
             "Notes":"The language school moved twice. This was the second location.",
             "Type":"School",
-            "Photo":0
+            "Photo":
          },
          "geometry":{
             "type":"Point",
@@ -115,7 +115,7 @@
             "Address":"601 S 8th Street",
             "Name":"Central Elementary",
             "Source":"2019 Address",
-            "Notes":0,
+            "Notes":"None",
             "Type":"School",
             "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/18453/rec/9 target=_blank><img src=\"images/central.jpg\" width=\"150em\">"
          },

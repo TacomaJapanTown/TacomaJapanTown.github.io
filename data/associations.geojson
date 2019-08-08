@@ -9,7 +9,7 @@
             "Source":"Morrison (1993, 56), Ryo Munekata Interview, Polk's 1920 Tacoma City Directory page 899",
             "Notes":"None",
             "Type":"Association",
-            "Photo":0
+            "Photo":
          },
          "geometry":{
             "type":"Point",
@@ -27,7 +27,7 @@
             "Source":"Ito (1973), Polk's 1933 Tacoma City Directory page 822, Morrison (1993, 57)",
             "Notes":"Directory: 'Tacoma Jujitsu Club'",
             "Type":"Association",
-            "Photo":0
+            "Photo":
          },
          "geometry":{
             "type":"Point",
@@ -45,7 +45,7 @@
             "Source":"Polk's 1933 Tacoma City Directory page 350",
             "Notes":"Directory: 'Carl S Miyazaki sec'",
             "Type":"Association",
-            "Photo":0
+            "Photo":
          },
          "geometry":{
             "type":"Point",

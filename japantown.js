@@ -49,7 +49,7 @@ var transportation = L.icon({
 $.getJSON("data/associations.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: associations});
       return marker;
@@ -60,7 +60,7 @@ $.getJSON("data/associations.geojson",function(data){
 $.getJSON("data/businesses.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: businesses});
       return marker;
@@ -71,7 +71,7 @@ $.getJSON("data/businesses.geojson",function(data){
 $.getJSON("data/churches.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: churches});
       return marker;
@@ -82,7 +82,7 @@ $.getJSON("data/churches.geojson",function(data){
 $.getJSON("data/government.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: government});
       return marker;
@@ -93,7 +93,7 @@ $.getJSON("data/government.geojson",function(data){
 $.getJSON("data/homes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: homes});
       return marker;
@@ -104,7 +104,7 @@ $.getJSON("data/homes.geojson",function(data){
 $.getJSON("data/recreation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: recreation});
       return marker;
@@ -115,7 +115,7 @@ $.getJSON("data/recreation.geojson",function(data){
 $.getJSON("data/schools.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: schools});
       return marker;
@@ -126,7 +126,7 @@ $.getJSON("data/schools.geojson",function(data){
 $.getJSON("data/transportation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: transportation});
       return marker;

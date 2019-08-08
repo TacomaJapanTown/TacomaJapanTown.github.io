@@ -45,7 +45,7 @@
             "Source":"2019 address, Photo from the Joseph Seto Collection at the Tacoma Public Library, Northwest Room",
             "Notes":"None",
             "Type":"School",
-            "Photo":"<img src=images/mccarver.jpg width=200em>"
+            "Photo":"<img src=images/mccarver.JPG width=200em>"
          },
          "geometry":{
             "type":"Point",
@@ -135,7 +135,7 @@
             "Source":"2019 address",
             "Notes":"None",
             "Type":"School",
-            "Photo":"<a href=https://commons.wikimedia.org/wiki/File:Lincoln_Park_High_School,_Tacoma,_Washington,_ca_1914_(BAR_61).jpeg target=_blank><img src=\"images/lincoln.jpg\" width=\"150em\">"
+            "Photo":"<a href=https://commons.wikimedia.org/wiki/File:Lincoln_Park_High_School,_Tacoma,_Washington,_ca_1914_(BAR_61).jpeg target=_blank><img src=\"images/lincoln.jpeg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",

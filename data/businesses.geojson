@@ -1445,9 +1445,9 @@
          "type":"Feature",
          "properties":{
             "Address":"1354 1/2 Market Street",
-            "Name":"Teikoku Trading Co.",
+            "Name":"Teikoku Trading Company",
             "Source":"Morrison (1993, 57)",
-            "Notes":"Eikichi Sakamoto 1914",
+            "Notes":"Owner: Eikichi Sakamoto",
             "Type":"Business",
             "Photo":
          },
@@ -1465,7 +1465,7 @@
             "Address":"1354 Market Street",
             "Name":"Nakagawa Candy Store and Hotel Union",
             "Source":"Morrison (1993, 57), Watanabe (1986, 69), Ito (1926), Polk's 1920 Tacoma City Directory page 941",
-            "Notes":"Kamekichi Nakagawa 1913, also listed as: Taiheiyo*",
+            "Notes":"Owner: Kamekichi Nakagawa",
             "Type":"Business",
             "Photo":
          },
@@ -1481,9 +1481,9 @@
          "type":"Feature",
          "properties":{
             "Address":"1355 Broadway",
-            "Name":"Furuya & Co",
+            "Name":"Furuya & Company",
             "Source":"Ito (1926), Morrison (1993, 55)",
-            "Notes":"Yoshiakira Furuuchi Mgr, Japanese Food Supplies a*",
+            "Notes":"The Furuya Company was a large Japanese store with three branches on the West Coast. You can find more information in the book Strangers from a Different Shore by Ronald Takaki (1989, 186).",
             "Type":"Business",
             "Photo":
          },
@@ -1501,7 +1501,7 @@
             "Address":"1356 Commerce Street",
             "Name":"Barber and Royal Hand Laundry",
             "Source":"Morrison (1993, 54), Ito (1926), Polk's 1929 Tacoma City Directory page 872",
-            "Notes":"Barber, Mrs. Chiyo Nakagawara and Royal Hand Laun*",
+            "Notes":"Barber Owner: Mrs. Chiyo Nakagawara",
             "Type":"Business",
             "Photo":
          },
@@ -1519,7 +1519,7 @@
             "Address":"1356 Broadway Street",
             "Name":"Bar, Cafe, Pool Hall, and Variety Shop",
             "Source":"Morrison (1993, 55), Watanabe (1986, 60)",
-            "Notes":"Fukuma Morita",
+            "Notes":"Owner: Fukuma Morita",
             "Type":"Business",
             "Photo":
          },
@@ -1537,7 +1537,7 @@
             "Address":"1355 Fawcett Avenue",
             "Name":"Yoshhara Grocery",
             "Source":"Morrison (1993, 59)",
-            "Notes":"",
+            "Notes":"Notes",
             "Type":"Business",
             "Photo":
          },
@@ -1555,7 +1555,7 @@
             "Address":"1356 Market Street",
             "Name":"Narahashi Laundry and Pacific Hand Laundry",
             "Source":"Morrison (1993, 57), Ito (1926), Polk's 1920 Tacoma City Directory page 651",
-            "Notes":"Sakutaro Narahashi 1915",
+            "Notes":"Owner: Sakutaro Narahashi",
             "Type":"Business",
             "Photo":
          },
@@ -1573,7 +1573,7 @@
             "Address":"1409 Court A",
             "Name":"Owl Hotel",
             "Source":"Morrison (1993, 61)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1585,6 +1585,7 @@
             ]
          }
       },
+      ///////////////////////////////////////////////////////////////////////////RESUME HERE//////////////////////////////////////////////////////////////////////
       {
          "type":"Feature",
          "properties":{

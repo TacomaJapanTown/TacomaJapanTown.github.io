@@ -1,1 +1,59 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Address":"1509 Commerce St","Name":"Vacant Lot Playground","Source":"Joe Kosai, 1941 city dir p993","Notes":" ","Type":"Recreation","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4382101,47.24896631]}},{"type":"Feature","properties":{"Address":"501 S I St","Name":"Wright Park","Source":"Interview","Notes":"Well, I remember going to Wright Park to go swing*","Type":"Recreation","Photo":0},"geometry":{"type":"Point","coordinates":[-122.449064,47.26021649]}},{"type":"Feature","properties":{"Address":"8511 South Tacoma Way","Name":"Vacant Lot near Airway Market","Source":"1933 city dir p?","Notes":" ","Type":"Recreation","Photo":0},"geometry":{"type":"Point","coordinates":[-122.483502,47.18011069]}}]}
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1509 Commerce Street",
+            "Name":"Vacant Lot - Play Area",
+            "Source":"Joe Kosai Interview, Polk's 1941 Tacoma City Directory page 993",
+            "Notes":"None",
+            "Type":"Recreation",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4382101,
+               47.24896631
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"501 S I Street",
+            "Name":"Wright Park",
+            "Source":"2019 address",
+            "Notes":"None",
+            "Type":"Recreation",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/786/rec/12 target=_blank><img src=\"images/wrightpark.jpg\" width=\"200em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.449064,
+               47.26021649
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"8511 South Tacoma Way",
+            "Name":"Vacant Lot - Play Area",
+            "Source":"Polk's 1929 Tacoma City Directory page 1091",
+            "Notes":"None",
+            "Type":"Recreation",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.483502,
+               47.18011069
+            ]
+         }
+      }
+   ]
+}

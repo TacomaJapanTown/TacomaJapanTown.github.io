@@ -1,1 +1,23 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Address":"625 Commerce St","Name":"Tacoma City Hall","Source":"Hanna Kae, 2019 Address","Notes":" ","Type":"Government","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4399683,47.25748611]}},{"type":"Feature","properties":{"Address":"A st - Court A, 11th St - 12th St","Name":"Post Office Immigration Office","Source":"Ito, 1920 city dir p335","Notes":"no exact address, known as \"federal building\", ma*","Type":"Government","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4368539,47.25387505]}}]}
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"A Street - Court A, 11th Street - 12th Street",
+            "Name":"Post Office Immigration Office",
+            "Source":"Ito (1926), Polk's 1920 Tacoma City Directory page 335",
+            "Notes":"No exact address found.",
+            "Type":"Government",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4368539,
+               47.25387505
+            ]
+         }
+      }
+   ]
+}

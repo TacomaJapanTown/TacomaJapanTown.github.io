@@ -1,1 +1,203 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Address":"111 N E St","Name":"Stadium High School","Source":"2019 Address","Notes":0,"Type":"School","Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/13891/rec/10 target=_blank><img src=\"images/stadium.jpg\" width=\"150em\">"},"geometry":{"type":"Point","coordinates":[-122.4486205,47.2668388]}},{"type":"Feature","properties":{"Address":"1715 S Tacoma Ave","Name":"Japanese Language School 3","Source":"Morrison (1993), 1933 City Directory","Notes":"And these three were all catered to by Japanese A*","Type":"School","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4424506,47.24586406]}},{"type":"Feature","properties":{"Address":"2301 S J St","Name":"McCarver Junior High","Source":"2019 address","Notes":" ","Type":"School","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4467119,47.23979064]}},{"type":"Feature","properties":{"Address":"411 S 15th","Name":"Japanese Language School 1","Source":"Mary Hanneman","Notes":" ","Type":"School","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4414768,47.24908172]}},{"type":"Feature","properties":{"Address":"510 s 15th St","Name":"Japanese Language School 2 and Yamasaki Home","Source":"Watanabe (1986) p68","Notes":" ","Type":"School","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4425532,47.2486278]}},{"type":"Feature","properties":{"Address":"602 N Sprague Ave","Name":"Jason Lee Middle School","Source":"2019 Address","Notes":0,"Type":"School","Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/26960/rec/13 target=_blank><img src=\"images/jasonlee.jpg\" width=\"150em\">"},"geometry":{"type":"Point","coordinates":[-122.4643758,47.25636634]}},{"type":"Feature","properties":{"Address":"601 S 8th St","Name":"Central Elementary","Source":"2019 Address","Notes":0,"Type":"School","Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/18453/rec/9 target=_blank><img src=\"images/central.jpg\" width=\"150em\">"},"geometry":{"type":"Point","coordinates":[-122.4465396,47.25626148]}},{"type":"Feature","properties":{"Address":"701 S 37th St","Name":"Lincoln Park High School","Source":"2019 address","Notes":" ","Type":"School","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4426571,47.22639325]}},{"type":"Feature","properties":{"Address":"711 S 25th St","Name":"Longfellow Elementary","Source":"Tacoma Boys and Girls Club","Notes":" ","Type":"School","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4434375,47.23842865]}},{"type":"Feature","properties":{"Address":"1002 S 52nd St","Name":"Horace Mann Elementary","Source":"2019 address","Notes":0,"Type":"School","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4478527,47.20912494]}},{"type":"Feature","properties":{"Address":"1712 S 17th St","Name":"Stanley Elementary","Source":"2019 address","Notes":0,"Type":"School","Photo":"0                                                                                                                                                                                                                                                            \u001a"},"geometry":{"type":"Point","coordinates":[-122.4592546,47.24422827]}}]}
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"111 N E Street",
+            "Name":"Stadium High School",
+            "Source":"2019 Address",
+            "Notes":0,
+            "Type":"School",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/13891/rec/10 target=_blank><img src=\"images/stadium.jpg\" width=\"150em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4486205,
+               47.2668388
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1715 S Tacoma Avenue",
+            "Name":"Japanese Language School",
+            "Source":"Polk's 1934 Tacoma City Directory page 834",
+            "Notes":"The city directory calls the language school 'Yamaski, Masato Kindergarten' after the school's principal Masato Yamasaki.",
+            "Type":"School",
+            "Photo":"<a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4424506,
+               47.24586406
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"2301 S J Street",
+            "Name":"McCarver Junior High",
+            "Source":"2019 address, Photo from the Joseph Seto Collection at the Tacoma Public Library, Northwest Room",
+            "Notes":"None",
+            "Type":"School",
+            "Photo":"<img src=images/mccarver.jpg width=200em>"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4467119,
+               47.23979064
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"411 S 15th Street",
+            "Name":"Japanese Language School",
+            "Source":"Mary Hanneman",
+            "Notes":"The language school moved twice. This was the first location.",
+            "Type":"School",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4414768,
+               47.24908172
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"510 s 15th Street",
+            "Name":"Japanese Language School and Yamasaki Home",
+            "Source":"Watanabe (1986, 68)",
+            "Notes":"The language school moved twice. This was the second location.",
+            "Type":"School",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4425532,
+               47.2486278
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"602 N Sprague Avenue",
+            "Name":"Jason Lee Middle School",
+            "Source":"2019 Address",
+            "Notes":"None",
+            "Type":"School",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/26960/rec/13 target=_blank><img src=\"images/jasonlee.jpg\" width=\"150em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4643758,
+               47.25636634
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"601 S 8th Street",
+            "Name":"Central Elementary",
+            "Source":"2019 Address",
+            "Notes":0,
+            "Type":"School",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/18453/rec/9 target=_blank><img src=\"images/central.jpg\" width=\"150em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4465396,
+               47.25626148
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"701 S 37th Street",
+            "Name":"Lincoln Park High School",
+            "Source":"2019 address",
+            "Notes":"None",
+            "Type":"School",
+            "Photo":"<a href=https://commons.wikimedia.org/wiki/File:Lincoln_Park_High_School,_Tacoma,_Washington,_ca_1914_(BAR_61).jpeg target=_blank><img src=\"images/lincoln.jpg\" width=\"150em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4426571,
+               47.22639325
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"711 S 25th Street",
+            "Name":"Longfellow Elementary",
+            "Source":"Tacoma Public Library Building Index",
+            "Notes":"None",
+            "Type":"School",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/compoundobject/collection/p17061coll1/id/1743/rec/3 target=_blank><img src=\"images/longfellow.jpg\" width=\"200em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4434375,
+               47.23842865
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"5211 S K Street",
+            "Name":"Horace Mann Elementary",
+            "Source":"Tacoma Public Library Building Index",
+            "Notes":"None",
+            "Type":"School",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/13532/rec/11 target=_blank><img src=\"images/mann.jpg\" width=\"200em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4478527,
+               47.20912494
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1712 S 17th St",
+            "Name":"Stanley Elementary",
+            "Source":"2019 address",
+            "Notes":"None",
+            "Type":"School",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/33287/rec/1 target=_blank><img src=\"images/stanley.jpg\" width=\"200em\">"                                                                                                                                                                                                                                                        \u001a"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4592546,
+               47.24422827
+            ]
+         }
+      }
+   ]
+}

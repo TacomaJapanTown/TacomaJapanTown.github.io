@@ -1,1 +1,41 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Address":"1911 Pacific Ave","Name":"Union Station","Source":"2019 Address for history museum","Notes":" ","Type":"Transportation","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4363569,47.2460818]}},{"type":"Feature","properties":{"Address":"711-13 Pacific Ave","Name":"Greyhound Bus Depot","Source":"Ito, 1929 city dir p927","Notes":"[the hotel] right across the street from the Grey*","Type":"Transportation","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4389504,47.25671318]}}]}
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1911 Pacific Avenue",
+            "Name":"Union Train Station",
+            "Source":"2019 Address",
+            "Notes":"None",
+            "Type":"Transportation",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/10775/rec/5 target=_blank><img src=\"images/unionstation.jpg\" width=\"150em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4363569,
+               47.2460818
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"711-13 Pacific Avenue",
+            "Name":"Greyhound Bus Depot",
+            "Source":"Ito (1926), Polk's 1929 Tacoma City Directory page 927",
+            "Notes":"None",
+            "Type":"Transportation",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/17589/rec/20 target=_blank><img src=\"images/greyhound.jpg\" width=\"200em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4389504,
+               47.25671318
+            ]
+         }
+      }
+   ]
+}

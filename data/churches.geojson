@@ -1,1 +1,113 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Address":"1410 Tacoma Ave S","Name":"Shinto Church","Source":"Takasugi, 1933 city dir p370, 862","Notes":"page 862 lists Uo Kamekichi and 370 says Kamekich*","Type":"Church","Photo":0},"geometry":{"type":"Point","coordinates":[-122.443933,47.24913307]}},{"type":"Feature","properties":{"Address":"1524 Fawcett Ave","Name":"Japanese Baptist Mission","Source":"Morrison (1993) p59","Notes":" ","Type":"Church","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4420213,47.24791361]}},{"type":"Feature","properties":{"Address":"1556 Market St","Name":"Tacoma Buddhist Church","Source":"Morrison (1993) p57","Notes":" ","Type":"Church","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4403683,47.24710868]}},{"type":"Feature","properties":{"Address":"1717 Fawcett Ave","Name":"Buddhist Church","Source":"Munekata, 1933 Directory","Notes":"[Indicates she went to the Buddhist Temple] That *","Type":"Church","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4410445,47.24616462]}},{"type":"Feature","properties":{"Address":"1901 Fawcett Ave","Name":"Japanese Methodist Church","Source":"Hanna Kae, Morrison (1993) p58","Notes":"[We went to] Methodist . Or I guess they changed *","Type":"Church","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4406602,47.24457814]}},{"type":"Feature","properties":{"Address":"518 S 13th St","Name":"Japanese Methodist Church and Kato Home","Source":"Morrison p60, Watanabe (1986) p68","Notes":"Akisane Kato was leader, wife named Maseko","Type":"Church","Photo":0},"geometry":{"type":"Point","coordinates":[-122.4428619,47.2506607]}}]}
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1410 Tacoma Avenue South",
+            "Name":"Shinto Church",
+            "Source":"Robert Takasugi Interview, ",
+            "Notes":"Polk's 1933 City Directory page 370 lists Uo Kamekichi at this address.",
+            "Type":"Church",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.443933,
+               47.24913307
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1524 Fawcett Avenue",
+            "Name":"Japanese Baptist Mission",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
+            "Type":"Church",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4420213,
+               47.24791361
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1556 Market Street",
+            "Name":"Previous Location of Tacoma Buddhist Church",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
+            "Type":"Church",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4403683,
+               47.24710868
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1717 Fawcett Avenue",
+            "Name":"Buddhist Church",
+            "Source":"Ryo Munekata Interview",
+            "Notes":"None",
+            "Type":"Church",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/2501/rec/1 target=_blank><img src=\"images/buddhistchurch.jpg\" width=\"150em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4410445,
+               47.24616462
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"1901 Fawcett Avenue",
+            "Name":"Japanese Methodist Church",
+            "Source":"Hanna Kae Nakagawa Interview, Morrison (1993, 58)",
+            "Notes":"Further reading at University of Washington, Seattle: <a href=http://archiveswest.orbiscascade.org/ark:/80444/xv65170 target=_blank>Whitney Memorial Methodist Church, & Japanese Methodist Episcopal Mission. (1908). Records, 1908-1968.</a>",
+            "Type":"Church",
+            "Photo":"<img src=\"images/methodistchurch.jpg\" width=\"150em\">"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4406602,
+               47.24457814
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "Address":"518 S 13th Street",
+            "Name":"Previous Location of Japanese Methodist Church and Kato Home",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"Watanabe (1986, 68) notes Akisane Kato was the leader and he was married to Maseko",
+            "Type":"Church",
+            "Photo":0
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4428619,
+               47.2506607
+            ]
+         }
+      }
+   ]
+}

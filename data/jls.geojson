@@ -6,7 +6,7 @@
          "properties":{
             "Address":"1715 S Tacoma Ave",
             "Name":"Japanese Language School",
-            "Source":"Morrison (1993), Polk's 1933 Tacoma City Directory"
+            "Source":"Polk's 1933 Tacoma City Directory"
          },
          "geometry":{
             "type":"Point",

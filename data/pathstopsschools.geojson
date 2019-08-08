@@ -4,7 +4,7 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"111 N E St",
+            "Address":"111 N E Street",
             "Name":"Stadium High School",
             "Source":"2019 Address",
             "Type":"School",
@@ -21,7 +21,7 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"602 N Sprague Ave",
+            "Address":"602 N Sprague Avenue",
             "Name":"Jason Lee Middle School",
             "Source":"2019 Address",
             "Type":"School",
@@ -38,7 +38,7 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"601 S 8th St",
+            "Address":"601 S 8th Street",
             "Name":"Central Elementary",
             "Source":"2019 Address",
             "Type":"School",

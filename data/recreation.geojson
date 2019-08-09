@@ -46,6 +46,7 @@
             "Notes":"None",
             "Type":"Recreation",
             "Photo":"None"
+         },
          "geometry":{
             "type":"Point",
             "coordinates":[

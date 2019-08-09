@@ -22,12 +22,30 @@
       {
          "type":"Feature",
          "properties":{
+            "Address":"1502 Broadway Street",
+            "Name":"Kochi Prefecture Association",
+            "Source":"Morrison (1993, 55), Watanabe (1986, 79)",
+            "Notes":1911,
+            "Type":"Association",
+            "Photo":
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4393951,
+               47.24896165
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
             "Address":"1554 Market Street",
-            "Name":"Judo Club and Astor Hotel",
+            "Name":"Judo Club",
             "Source":"Ito (1973), Polk's 1933 Tacoma City Directory page 822, Morrison (1993, 57)",
             "Notes":"Directory: 'Tacoma Jujitsu Club'",
             "Type":"Association",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/11935/rec/4 target=_blank><img src=\"images/lorenz.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",

@@ -1212,7 +1212,7 @@
          "properties":{
             "Address":"1342 Broadway Street",
             "Name":"Niyama Fine Jewelry",
-            "Source":"Ito (1926), Morrison (1993) p56 Ryo Munekata Interview, 1920 city dir p627",
+            "Source":"Ito (1926), Morrison (1993, 56), Ryo Munekata Interview, 1920 city dir p627",
             "Notes":"None",
             "Type":"Business",
             "Photo":
@@ -1312,24 +1312,6 @@
             "coordinates":[
                -122.440618,
                47.25052518
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "Address":"1347 Fawcett Avenue",
-            "Name":"Nishioka Home",
-            "Source":"Morrison (1993, 59)",
-            "Notes":"None",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.441812,
-               47.24904783
             ]
          }
       },
@@ -1483,7 +1465,7 @@
             "Address":"1355 Broadway",
             "Name":"Furuya & Company",
             "Source":"Ito (1926), Morrison (1993, 55)",
-            "Notes":"The Furuya Company was a large Japanese store with three branches on the West Coast. You can find more information in the book Strangers from a Different Shore by Ronald Takaki (1989, 186).",
+            "Notes":"The Furuya Company was a large Japanese store with three branches on the West Coast. You can find more information in the book <i>Strangers from a Different Shore</i> by Ronald Takaki (1989, 186).",
             "Type":"Business",
             "Photo":
          },
@@ -1535,7 +1517,7 @@
          "type":"Feature",
          "properties":{
             "Address":"1355 Fawcett Avenue",
-            "Name":"Yoshhara Grocery",
+            "Name":"Yoshihara Grocery",
             "Source":"Morrison (1993, 59)",
             "Notes":"Notes",
             "Type":"Business",
@@ -1585,14 +1567,13 @@
             ]
          }
       },
-      ///////////////////////////////////////////////////////////////////////////RESUME HERE//////////////////////////////////////////////////////////////////////
       {
          "type":"Feature",
          "properties":{
             "Address":"1407 Pacific Avenue",
             "Name":"Tokyo Laundry",
             "Source":"Morrison (1993, 53), Ito (1926)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1607,28 +1588,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1402 S Tacoma Avenue",
-            "Name":"Y. Mukai",
-            "Source":"Morrison (1993, 59)",
-            "Notes":"",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4440198,
-               47.24947978
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"1409 Pacific Avenue",
             "Name":"Otsuka Laundry",
             "Source":"Morrison (1993, 53)",
-            "Notes":"Hidegoro Otsuka",
+            "Notes":"Owner: Hidegoro Otsuka",
             "Type":"Business",
             "Photo":
          },
@@ -1646,7 +1609,7 @@
             "Address":"1501 Market Street",
             "Name":"15th Ave Garage",
             "Source":"Ito (1926), Polk's 1933 Tacoma City Directory page 822",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1661,28 +1624,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1502 Broadway Street",
-            "Name":"Kochi Prefecture Association",
-            "Source":"Morrison (1993, 55), Watanabe (1986, 79)",
-            "Notes":1911,
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4393951,
-               47.24896165
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"1502 Jefferson Street",
             "Name":"Majestic Cigar",
             "Source":"Morrison (1993, 60)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1700,7 +1645,7 @@
             "Address":"1503 Commerce Street",
             "Name":"Tsuda Barber",
             "Source":"Morrison (1993, 54)",
-            "Notes":"Isaburo Tsuda",
+            "Notes":"Owner: Isaburo Tsuda",
             "Type":"Business",
             "Photo":
          },
@@ -1718,7 +1663,7 @@
             "Address":"1502 1/2 Broadway Street",
             "Name":"Elgin Hotel",
             "Source":"Morrison (1993, 55), Watanabe (1986, 61)",
-            "Notes":"Jusuke Fukutomi 1911",
+            "Notes":"Owner: Jusuke Fukutomi",
             "Type":"Business",
             "Photo":
          },
@@ -1736,7 +1681,7 @@
             "Address":"1504 Broadway Street",
             "Name":"Japanese Restaurant",
             "Source":"Morrison (1993, 55), Watanabe (1986, 67)",
-            "Notes":"Eiji Torikoshi 1911",
+            "Notes":"Owner: Eiji Torikoshi",
             "Type":"Business",
             "Photo":
          },
@@ -1754,7 +1699,7 @@
             "Address":"1503 1/2 Commerce Street",
             "Name":"Kenjo Barber Shop and Bath House",
             "Source":"Morrison (1993, 54)",
-            "Notes":"Kametaro Kenjo",
+            "Notes":"Owner: Kametaro Kenjo",
             "Type":"Business",
             "Photo":
          },
@@ -1770,9 +1715,9 @@
          "type":"Feature",
          "properties":{
             "Address":"1506 Broadway Street",
-            "Name":"Yamane Laundry, Bath House and Barber and Asahi P*",
+            "Name":"Yamane Laundry, Bath House and Barber",
             "Source":"Morrison (1993, 55), Ito (1926), Polk's 1933 Tacoma City Directory page 768",
-            "Notes":"Magoichi Yamane",
+            "Notes":"Owner: Magoichi Yamane",
             "Type":"Business",
             "Photo":
          },
@@ -1787,28 +1732,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1505 Fawcett Avenue",
-            "Name":"Japanese Baptist Church",
-            "Source":"Ryo Munekata Interview, Polk's 1933 Tacoma City Directory page 350",
-            "Notes":"",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4417111,
-               47.24854372
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"1506 Market Street",
             "Name":"Drayage Trucking Business & Torii Tofu Shop",
             "Source":"Morrison (1993, 57), Watanabe (1986, 69)",
-            "Notes":"Kisoji Hiroishi and Teiji Torii 1914, Drayage means          ",
+            "Notes":"Owners: Kisoji Hiroishi and Teiji Tori; Drayage refers to the minor transportation of goods, especially for shipping.",
             "Type":"Business",
             "Photo":
          },
@@ -1826,7 +1753,7 @@
             "Address":"1508 Market Street",
             "Name":"Koji Rice Dealers",
             "Source":"Morrison (1993, 57)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1844,7 +1771,7 @@
             "Address":"1510 Jefferson Street",
             "Name":"Hammamoto Fruits & Grocery",
             "Source":"Ito (1926), Morrison (1993, 60)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1862,7 +1789,7 @@
             "Address":"1506 1/2 Pacific Avenue",
             "Name":"Travelers' Hotel",
             "Source":"Ito (1926), Morrison (1993, 53)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1882,7 +1809,7 @@
             "Source":"Morrison (1993, 53)",
             "Notes":"Michisuke Hosokawa",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/36019/rec/1 target=_blank><img src=\"images/grandcafe.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -1898,7 +1825,7 @@
             "Address":"1512 1/2 Broadway Street",
             "Name":"Kyushu Hotel",
             "Source":"Morrison (1993, 55)",
-            "Notes":"Chotaro Hiroshige 1916",
+            "Notes":"Owner: Chotaro Hiroshige",
             "Type":"Business",
             "Photo":
          },
@@ -1916,7 +1843,7 @@
             "Address":"1511 S Tacoma Avenue",
             "Name":"Moriichi Barber",
             "Source":"Morrison (1993, 59)",
-            "Notes":"Yamane Moriichi",
+            "Notes":"Owner: Yamane Moriichi",
             "Type":"Business",
             "Photo":
          },
@@ -1931,28 +1858,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1512 1/2 Jefferson Street",
-            "Name":"Restaurant",
-            "Source":"Morrison (1993, 60)",
-            "Notes":"",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4380432,
-               47.24831502
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"1512 Broadway Street",
-            "Name":"Uwajima-ya and Ozawa Co. Store",
+            "Name":"Uwajima-ya and Ozawa Company Store",
             "Source":"Ito (1926), Polk's 1929 Tacoma City Directory page 867, Morrison (1993, 55)",
-            "Notes":"",
+            "Notes":"This store was the first location for the Uwajimaya company. In 2019 there are three locations: Renton, Seattle, and Bellevue, Washington.",
             "Type":"Business",
             "Photo":
          },
@@ -1970,7 +1879,7 @@
             "Address":"1512 Fawcett Avenue",
             "Name":"Komaro and Okada",
             "Source":"Morrison (1993, 59)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -1988,7 +1897,7 @@
             "Address":"1512 Jefferson Avenue",
             "Name":"State Cafe and Kawai Barber Shop",
             "Source":"Hanna Kae Nakagawa Interview, Morrison (1993, 60)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2006,7 +1915,7 @@
             "Address":"1512 1/2 Pacific Avenue",
             "Name":"Ranier Hotel",
             "Source":"Morrison (1993, 53)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2024,7 +1933,7 @@
             "Address":"1513 S Tacoma Avenue",
             "Name":"Grocery Store",
             "Source":"Morrison (1993, 59)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2039,12 +1948,12 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1514 Pacific Avenue",
+            "Address":"1513 S Tacoma Avenue",
             "Name":"Grand Cafe",
             "Source":"Ito (1926), Polk's 1933 Tacoma City Directory page 275, Watanabe (1986, 65)",
             "Notes":"(Sadamu Yamo M Nishida)",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/36019/rec/1 target=_blank><img src=\"images/grandcafe.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2060,7 +1969,7 @@
             "Address":"1514 1/2 Pacific Avenue",
             "Name":"Grand Hotel",
             "Source":"Ito (1926), Polk's 1933 Tacoma City Directory page 275",
-            "Notes":"(S Kosai)",
+            "Notes":"Owner: S. Kosai",
             "Type":"Business",
             "Photo":
          },
@@ -2076,11 +1985,11 @@
          "type":"Feature",
          "properties":{
             "Address":"1517 Commerce Street",
-            "Name":"Wood & Co Inc Teas and Coffees Wholesale",
+            "Name":"Wood & Company Incorporated Teas and Coffees Wholesale",
             "Source":"Hanna Kae Nakagawa Interview, Polk's 1929 Tacoma City Directory page 872",
-            "Notes":"If you know Jefferson goes diagonally and then Co*",
+            "Notes":"None",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/27342/rec/1 target=_blank><img src=\"images/woodcoffee.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2096,7 +2005,7 @@
             "Address":"1519 1/2 Broadway Street",
             "Name":"New York Life Insurance Agency and Broadway Hotel",
             "Source":"Morrison (1993, 55), Watanabe (1986, 69) Ito (1926), Polk's 1933 Tacoma City Directory page 117",
-            "Notes":"Insurance agency Shoji Ohira 1916 and 55 person h*",
+            "Notes":"Insurance agency owner: Shoji Ohira",
             "Type":"Business",
             "Photo":
          },
@@ -2114,9 +2023,9 @@
             "Address":"1522 Jefferson Street",
             "Name":"Carlton Hotel/Confectionary",
             "Source":"Ito (1926)",
-            "Notes":"",
+            "Notes":"The Carlton Hotel still stands as part of the University of Washington, Tacoma campus. The Convention Center sits behind the building to the east.",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/34993/rec/3 target=_blank><img src=\"images/carltonhotel.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2132,7 +2041,7 @@
             "Address":"1522 1/2 Broadway Street",
             "Name":"New York Hotel",
             "Source":"Morrison (1993, 55), Watanabe (1986, 61)",
-            "Notes":"Misuke Shinguchi 1915",
+            "Notes":"Owner: Misuke Shinguchi",
             "Type":"Business",
             "Photo":
          },
@@ -2147,28 +2056,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1522 Fawcett Avenue",
-            "Name":"Seiji Konzo's House",
-            "Source":"Kazuo Horita Interview, Polk's 1933 Tacoma City Directory page 389, Morrison (1993, 59)",
-            "Notes":"it just so happens that Seiji Konzo family lived *",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4420374,
-               47.24799666
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"1525 Market Street",
             "Name":"Madison Hotel",
             "Source":"Ito (1926), Morrison (1993, 57)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2186,7 +2077,7 @@
             "Address":"1532 Market Street",
             "Name":"The Tacoma Japanese Times",
             "Source":"Ryo Munekata Interview, Morrison (1993, 57), Watanabe (1986, 81), Ito (1926)",
-            "Notes":"Asahi Shimbum Newspaper branch office, Tatsuo Tak*",
+            "Notes":"Asahi Shimbum Newspaper branch office",
             "Type":"Business",
             "Photo":
          },
@@ -2204,9 +2095,9 @@
             "Address":"1535 Pacific Avenue",
             "Name":"Hotel Savoy",
             "Source":"Morrison (1993, 53)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/31295/rec/4 target=_blank><img src=\"images/hotelsavoy.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2222,9 +2113,9 @@
             "Address":"1541 Broadway Street",
             "Name":"Rector Hotel",
             "Source":"Ito (1926), Morrison (1993, 55)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/10693/rec/1 target=_blank><img src=\"images/rectorhotel.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2258,7 +2149,7 @@
             "Address":"1546 Commerce Street",
             "Name":"Frye Market",
             "Source":"Ito (1926), Polk's 1933 Tacoma City Directory page 253",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2276,7 +2167,7 @@
             "Address":"1544 Pacific Avenue",
             "Name":"N.P. Cafe",
             "Source":"Morrison (1993, 53), Watanabe (1986, 65)",
-            "Notes":"western restaurant Kenji Shibata and Genkichi Ino*",
+            "Notes":"Western restaurant owned by Kenji Shibata and Genkichi Inouye",
             "Type":"Business",
             "Photo":
          },
@@ -2294,7 +2185,7 @@
             "Address":"1546 1/2  Market Street",
             "Name":"Taira Tofu Store & Home",
             "Source":"Ito (1926), Junichi Taira Interview",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2310,11 +2201,11 @@
          "type":"Feature",
          "properties":{
             "Address":"1554 1/2 Market Street",
-            "Name":"Columbus Hotel",
-            "Source":"Ito (1926), Polk's 1933  Tacoma City Directory page 163",
-            "Notes":"Columbine Hotel (O Okawa), not in 1920 directory",
+            "Name":"Columbus, Astor, or Hiroshimaya Hotel",
+            "Source":"Ito (1926), Polk's 1933 Tacoma City Directory page 163, Morrison (1993, 57)",
+            "Notes":"Also called the Columbine Hotel owned by O. Okawa.",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/11935/rec/4 target=_blank><img src=\"images/lorenz.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2330,7 +2221,7 @@
             "Address":"1701 Market",
             "Name":"Superior Hotel",
             "Source":"Ito (1926), Morrison (1993, 57)",
-            "Notes":"[Hattori describes that her parents owned and ran*",
+            "Notes":"Fumi Sato's family ran the Superior Hotel.",
             "Type":"Business",
             "Photo":
          },
@@ -2348,7 +2239,7 @@
             "Address":"1702 Broadway Street",
             "Name":"Massasoit Hotel",
             "Source":"Ito (1926), Morrison (1993, 55), Watanabe (1986, 61)",
-            "Notes":"Gosaku Hamasaki 1913",
+            "Notes":"Owner: Gosaku Hamasaki; This building is now called the Pinkerton Building and still stands as the location for the School of Urban Studies at the University of Washington, Tacoma. The building has been extensively repaired and retrofitted but retains it's original architecture.",
             "Type":"Business",
             "Photo":
          },
@@ -2363,28 +2254,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1555 1/2 Market Street",
-            "Name":"Hiroshima-ya Hotel",
-            "Source":"Ito (1926), Morrison (1993, 57)",
-            "Notes":"previously was the Astor House",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4400372,
-               47.24745288
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"1700 Pacific Avenue",
             "Name":"Northern Pacific Restaurant",
             "Source":"Ito (1926), Polk's 1929 Tacoma City Directory page 933",
-            "Notes":"checked 1933 city dir p195 and didn't see a Depot*",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2402,7 +2275,7 @@
             "Address":"1710 Broadway Street",
             "Name":"Sugiyama Laundry",
             "Source":"Morrison (1993, 55)",
-            "Notes":"Muyo Sugiyama 1911",
+            "Notes":"Owner: Muyo Sugiyama",
             "Type":"Business",
             "Photo":
          },
@@ -2420,7 +2293,7 @@
             "Address":"1808 Broadway",
             "Name":"Okamura Company",
             "Source":"Ito (1926), Morrison (1993, 55)",
-            "Notes":"Jitsuo Takatsune manager",
+            "Notes":"Manager: Jitsuo Takatsune",
             "Type":"Business",
             "Photo":
          },
@@ -2438,7 +2311,7 @@
             "Address":"1754 Jefferson Street",
             "Name":"Matsunaka Laundry and Yasuda Barber",
             "Source":"Morrison (1993, 60), Watanabe (1986, 63)",
-            "Notes":"Tamakichi Matsunaka, Barber shop Tamejiro Yasuda",
+            "Notes":"Laundry Owner: Tamakichi Matsunaka, Barber Shop Owner: Tamejiro Yasuda",
             "Type":"Business",
             "Photo":
          },
@@ -2456,7 +2329,7 @@
             "Address":"1908 Jefferson Street",
             "Name":"Tacoma Japanese Times",
             "Source":"Morrison (1993, 60), Watanabe (1986, 81)",
-            "Notes":"Also known as Tacoma Shuko (weekly) or Tacoma Jih*",
+            "Notes":"Also known as Tacoma Shuko (weekly) or Tacoma Jiho.",
             "Type":"Business",
             "Photo":
          },
@@ -2474,7 +2347,7 @@
             "Address":"1926 Jefferson Street",
             "Name":"Nomura Laundry",
             "Source":"Morrison (1993, 60)",
-            "Notes":"Laundry, Yomimatsu Nomura, after 1900",
+            "Notes":"Owner: Yomimatsu Nomura",
             "Type":"Business",
             "Photo":
          },
@@ -2483,24 +2356,6 @@
             "coordinates":[
                -122.4392706,
                47.24417214
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "Address":"1955 S Tacoma Avenue",
-            "Name":"Auto Repair and Fuji Ten Cent Store",
-            "Source":"Morrison (1993, 59)",
-            "Notes":"",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4420123,
-               47.24325945
             ]
          }
       },
@@ -2528,7 +2383,7 @@
             "Address":"302 S13th Street",
             "Name":"Tokyo Cafe",
             "Source":"Ito (1926), Polk's 1929 Tacoma City Directory page 781",
-            "Notes":"U C Kusumoto",
+            "Notes":"Owner: U. C. Kusumoto",
             "Type":"Business",
             "Photo":
          },
@@ -2546,7 +2401,7 @@
             "Address":"2410 N 30th Street",
             "Name":"Nakagawara Laundry",
             "Source":"Watanabe (1986, 63)",
-            "Notes":"Shikataro Nakagawara",
+            "Notes":"Owner: Shikataro Nakagawara",
             "Type":"Business",
             "Photo":
          },
@@ -2562,9 +2417,9 @@
          "type":"Feature",
          "properties":{
             "Address":"204 S 15th Street",
-            "Name":"Oxford Hotel",
+            "Name":"Oxford or Delmont Hotel",
             "Source":"Ito (1926), Morrison (1993, 60), Watanabe (1986, 61)",
-            "Notes":"Delmont Hotel, Hidetaro Tsushi and later Oxford H*",
+            "Notes":"Owner: Hidetaro Tsushi",
             "Type":"Business",
             "Photo":
          },
@@ -2580,9 +2435,9 @@
          "type":"Feature",
          "properties":{
             "Address":"304 S 17th Street",
-            "Name":"Chicago Laundry and Uyeda Dye Work Co.",
+            "Name":"Chicago Laundry and Uyeda Dye Work Company",
             "Source":"Ito (1926), Polk's 1920 Tacoma City Directory page 241, Morrison (1993, 61)",
-            "Notes":"K Kawaguchi",
+            "Notes":"Owner: K. Kawaguchi",
             "Type":"Business",
             "Photo":
          },
@@ -2597,28 +2452,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"307 S 17th Street",
-            "Name":"St. Francis Hotel",
-            "Source":"Morrison (1993, 61)",
-            "Notes":"",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4390562,
-               47.24721295
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"305 S 17th Street",
             "Name":"Takada Cleaner",
             "Source":"Morrison (1993, 61)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2636,7 +2473,7 @@
             "Address":"310 S 17th Street",
             "Name":"Sumida Barber",
             "Source":"Morrison (1993, 61), Watanabe (1986, 65)",
-            "Notes":"Barber shop Jiro Sumida 1917",
+            "Notes":"Owner: Jiro Sumida",
             "Type":"Business",
             "Photo":
          },
@@ -2654,7 +2491,7 @@
             "Address":"310 S 15th Street",
             "Name":"Fukui Grocery and Books",
             "Source":"Chizu Takaoka Interview, Polk's 1929 Tacoma City Directory page 305",
-            "Notes":"Mr. Fukuye had a grocery store. [Near the Columbu*",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2672,7 +2509,7 @@
             "Address":"313 S 13th Street",
             "Name":"Okada Barber",
             "Source":"Morrison (1993, 60)",
-            "Notes":"Heikichi Takeda after 1911, Torakichi Okada barbe*",
+            "Notes":"Owners: Heikichi Takeda after 1911, Torakichi Okada before 1911",
             "Type":"Business",
             "Photo":
          },
@@ -2690,7 +2527,7 @@
             "Address":"313 S 15th Street",
             "Name":"Hotel Baker",
             "Source":"Ito (1926), Polk's 1929 Tacoma City Directory page 994",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2705,36 +2542,18 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"315 S 11th Street",
-            "Name":"Fashion Barber Shop",
-            "Source":"Morrison (1993, 60)",
-            "Notes":"",
+            "Address":"1355 Market Street",
+            "Name":"Hotel Baker/Hiroshimaya",
+            "Source":"Tacoma Public Library Image Archive (see below)",
+            "Notes":"Owned by Seiishi Kano",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/24011/rec/6 target=_blank><img src=\"images/hiroshimaya.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -122.440377,
-               47.25340943
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
-            "Address":"317 S 13th Street",
-            "Name":"Tailor",
-            "Source":"Morrison (1993, 60)",
-            "Notes":"",
-            "Type":"Business",
-            "Photo":
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4400266,
-               47.25133671
+              -122.440589,
+               47.250162
             ]
          }
       },
@@ -2744,7 +2563,7 @@
             "Address":"319 S 13th Street",
             "Name":"Oka Barber",
             "Source":"Ito (1926), Misaki Seto translated, Polk's 1933 Tacoma City Directory page 896",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2760,9 +2579,9 @@
          "type":"Feature",
          "properties":{
             "Address":"407 J Street",
-            "Name":"Eagle Steam Laundry Co",
+            "Name":"Eagle Steam Laundry Company",
             "Source":"Watanabe (1986, 62)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2780,7 +2599,7 @@
             "Address":"319 S 13th Street",
             "Name":"Akase Barber and Laundry",
             "Source":"Morrison (1993, 60)",
-            "Notes":"Barber shop laundry combination, Kaizo Akase 1914",
+            "Notes":"Owner: Kaizo Akase",
             "Type":"Business",
             "Photo":
          },
@@ -2798,7 +2617,7 @@
             "Address":"402 1/2 S 13th Street",
             "Name":"Dress Maker",
             "Source":"Morrison (1993, 60)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2816,7 +2635,7 @@
             "Address":"423 Puyallup Avenue",
             "Name":"Yoshitomi Laundry/Morishita Junk",
             "Source":"Watanabe (1986, 63,69)",
-            "Notes":"Hisao Morishita",
+            "Notes":"Owner: Hisao Morishita",
             "Type":"Business",
             "Photo":
          },
@@ -2834,7 +2653,7 @@
             "Address":"432 Puyallup Avenue",
             "Name":"Hijishi Junk",
             "Source":"Watanabe (1986, 69)",
-            "Notes":"Zensuke Hijishi",
+            "Notes":"Owner: Zensuke Hijishi",
             "Type":"Business",
             "Photo":
          },
@@ -2852,7 +2671,7 @@
             "Address":"415 S 19th Street",
             "Name":"Lucky's Cleaners",
             "Source":"Morrison (1993, 61)",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2870,7 +2689,7 @@
             "Address":"701 E Street",
             "Name":"Nagamoto Hotel/Hiroshimaya Inn",
             "Source":"Watanabe (1986, 5,50)",
-            "Notes":"",
+            "Notes":"There were multiple Hiroshimaya Hotels in Tacoma.",
             "Type":"Business",
             "Photo":
          },
@@ -2888,7 +2707,7 @@
             "Address":"713 Pacific Avenue",
             "Name":"Yamane Shoe Repair",
             "Source":"Watanabe (1986, 64)",
-            "Notes":"Shuichi Yamane",
+            "Notes":"Owner: Shuichi Yamane",
             "Type":"Business",
             "Photo":
          },
@@ -2906,7 +2725,7 @@
             "Address":"744 Court D",
             "Name":"Market Cafe",
             "Source":"Polk's 1933 Tacoma City Directory page 331",
-            "Notes":"Horiuchi Giichi (Sayo)",
+            "Notes":"Owner: Horiuchi Giichi (Sayo)",
             "Type":"Business",
             "Photo":
          },
@@ -2924,7 +2743,7 @@
             "Address":"738 St Helens Avenue",
             "Name":"Lucky Dye Work",
             "Source":"Watanabe (1986, 62)",
-            "Notes":"Chonosuke Iwai",
+            "Notes":"Owner: Chonosuke Iwai",
             "Type":"Business",
             "Photo":
          },
@@ -2940,9 +2759,9 @@
          "type":"Feature",
          "properties":{
             "Address":"8010 South Tacoma Way",
-            "Name":"Kubo and Son br store",
+            "Name":"Kubo and Son Store",
             "Source":"Polk's 1929 Tacoma City Directory page 1091",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -2958,9 +2777,9 @@
          "type":"Feature",
          "properties":{
             "Address":"8012 South Tacoma Way",
-            "Name":"City Limits Fruit Co.",
+            "Name":"City Limits Fruit Company",
             "Source":"Polk's 1933 Tacoma City Directory page 331",
-            "Notes":"Horiuchi Kay",
+            "Notes":"Owner: Horiuchi Kay",
             "Type":"Business",
             "Photo":
          },
@@ -2978,7 +2797,7 @@
             "Address":"809 Pacific Avenue",
             "Name":"Empire Hotel & Cafe",
             "Source":"Watanabe (1986, 65), Ito (1926), Polk's 1933 Tacoma City Directory page p221",
-            "Notes":"Sakunoshin Matsumoto",
+            "Notes":"Owner: Sakunoshin Matsumoto",
             "Type":"Business",
             "Photo":
          },
@@ -2994,11 +2813,11 @@
          "type":"Feature",
          "properties":{
             "Address":"8104 South Tacoma Way",
-            "Name":"Yakima Fruit Co",
+            "Name":"Yakima Fruit Company",
             "Source":"Polk's 1941 Tacoma City Directory page 1091",
-            "Notes":"Nishijima Satoshi",
+            "Notes":"Owner: Nishijima Satoshi; The location became Gambles Auto Supply Company in the 1950s (see photo).",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/17890/rec/1 target=_blank><img src=\"images/8104SouthTacomaWay.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -3014,9 +2833,9 @@
             "Address":"8202 South Tacoma Way",
             "Name":"Hayashi Grocery",
             "Source":"Polk's 1941 Tacoma City Directory page 1091",
-            "Notes":"Hayashi Mitsuru",
+            "Notes":"Owner: Hayashi Mitsuru; The location became Meyer Linoleum in the 1950s (see photo).",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/34528/rec/1 target=_blank><img src=\"images/8202SouthTacomaWay.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -3032,7 +2851,7 @@
             "Address":"8224 South Tacoma Way",
             "Name":"Airway Market",
             "Source":"Polk's 1933 Tacoma City Directory page 854",
-            "Notes":"Kimura Kimiko",
+            "Notes":"Owner: Kimura Kimiko",
             "Type":"Business",
             "Photo":
          },
@@ -3048,9 +2867,9 @@
          "type":"Feature",
          "properties":{
             "Address":"8204 South Tacoma Way",
-            "Name":"Kubo and Son fruits and grocery",
+            "Name":"Kubo and Son Fruits and Grocery",
             "Source":"Polk's 1941 Tacoma City Directory page 1091",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -3068,7 +2887,7 @@
             "Address":"8290 South Tacoma Way",
             "Name":"Sunrise Market Grocery and Fruits",
             "Source":"Polk's 1941 Tacoma City Directory page 1091",
-            "Notes":"Kubota Sometaro",
+            "Notes":"Owner: Kubota Sometaro",
             "Type":"Business",
             "Photo":
          },
@@ -3086,7 +2905,7 @@
             "Address":"8324 South Tacoma Way",
             "Name":"Hi-Way Fruit",
             "Source":"Polk's 1941 Tacoma City Directory page 1091",
-            "Notes":"Takeuchi Fred",
+            "Notes":"Owner: Takeuchi Fred",
             "Type":"Business",
             "Photo":
          },
@@ -3104,7 +2923,7 @@
             "Address":"8402 South Tacoma Way",
             "Name":"Henry Horiuchi Fruit",
             "Source":"Polk's 1933 Tacoma City Directory page 331",
-            "Notes":"Horiuchi Henry (Eiko) fruit",
+            "Notes":"Owner: Horiuchi Henry (Eiko)",
             "Type":"Business",
             "Photo":
          },
@@ -3122,7 +2941,7 @@
             "Address":"8608 South Tacoma Way",
             "Name":"Liberty Florists and Market",
             "Source":"Polk's 1941 Tacoma City Directory page 1091",
-            "Notes":"Kumasaki Thos J and Takaki Joe",
+            "Notes":"Owners: Kumasaki Thomas J. and Takaki Joe",
             "Type":"Business",
             "Photo":
          },
@@ -3140,7 +2959,7 @@
             "Address":"8612 South Tacoma Way",
             "Name":"South End Grocery",
             "Source":"Polk's 1941 Tacoma City Directory page 1091",
-            "Notes":"Kimura Denhachi",
+            "Notes":"Owner: Kimura Denhachi",
             "Type":"Business",
             "Photo":
          },
@@ -3158,7 +2977,7 @@
             "Address":"944 Market Street",
             "Name":"A B Hand Laundry",
             "Source":"Polk's 1933 Tacoma City Directory page 822",
-            "Notes":"(Sonaya Yamamoto)",
+            "Notes":"Owner: Sonaya Yamamoto",
             "Type":"Business",
             "Photo":
          },
@@ -3176,7 +2995,7 @@
             "Address":"921 1/2 E Street",
             "Name":"Makimura Photography Studio",
             "Source":"Watanabe (1986, 68)",
-            "Notes":"Shinkichi Makimura",
+            "Notes":"Owner: Shinkichi Makimura",
             "Type":"Business",
             "Photo":
          },
@@ -3191,10 +3010,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"953 S Tacoma Avenue",
+            "Address":"953 Tacoma Avenue South",
             "Name":"California Laundry",
             "Source":"Watanabe (1986, 62), Polk's 1920 Tacoma City Directory page 229",
-            "Notes":"Katami Nakano",
+            "Notes":"Owner: Katami Nakano",
             "Type":"Business",
             "Photo":
          },
@@ -3209,12 +3028,12 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"Broadway sw cor 11th",
-            "Name":"Stone Fisher Depot",
+            "Address":"Southwest corner of Broadway and 11th",
+            "Name":"Stone Fisher Department Store",
             "Source":"Ito (1926), Polk's 1920 Tacoma City Directory page 786",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
-            "Photo":
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/9963/rec/1 target=_blank><img src=\"images/stonefisher.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -3230,7 +3049,7 @@
             "Address":"St Paul Avenue",
             "Name":"Hotel",
             "Source":"1926 Metseker Atlas",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -3248,7 +3067,7 @@
             "Address":"St Paul Avenue",
             "Name":"Dining Room",
             "Source":"1926 Metseker Atlas",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -3266,7 +3085,7 @@
             "Address":"St Paul Avenue",
             "Name":"Japanese Hotel",
             "Source":"1926 Metseker Atlas",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -3281,10 +3100,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"E 15th Street",
+            "Address":"East 15th Street",
             "Name":"Wheeler Osgood Japanese Building",
             "Source":"1912 Sanborn Atlas",
-            "Notes":"",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -3299,7 +3118,7 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"2410 N 30th Street",
+            "Address":"2410 North 30th Street",
             "Name":"Nakagawara Laundry",
             "Source":"Watanabe (1986, 63)",
             "Notes":"Shikataro Nakagawara",
@@ -3317,7 +3136,7 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1118 S K Street",
+            "Address":"1118 South K Street",
             "Name":"Jinguji Produce",
             "Source":"Polk's 1933 Tacoma City Directory page 353",
             "Notes":"Jinguji Masatoshi Hama Produce",
@@ -3327,15 +3146,15 @@
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -122.4664129,
-               47.26475085
+               -122.451919,
+               47.251400
             ]
          }
       },
       {
          "type":"Feature",
          "properties":{
-            "Address":"1023 S K Street",
+            "Address":"1023 South K Street",
             "Name":"Hayashi Produce",
             "Source":"Polk's 1933 Tacoma City Directory page 809",
             "Notes":"Hayashi F Produce",
@@ -3345,15 +3164,15 @@
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -122.4648853,
-               47.26453037
+               -122.451385,
+               47.252329
             ]
          }
       },
       {
          "type":"Feature",
          "properties":{
-            "Address":"1122 S K Street",
+            "Address":"1122 South K Street",
             "Name":"Sato Produce",
             "Source":"Polk's 1933 Tacoma City Directory page 809",
             "Notes":"Sato Toru Produce",
@@ -3363,18 +3182,18 @@
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -122.466696,
-               47.26484008
+               -122.451883,
+               47.251125
             ]
          }
       },
       {
          "type":"Feature",
          "properties":{
-            "Address":"213 N I Street",
+            "Address":"213 North I Street",
             "Name":"Kawano Grocery Store",
-            "Source":"?????",
-            "Notes":"",
+            "Source":"Polk's 1940 Tacoma City Directory page 436",
+            "Notes":"None",
             "Type":"Business",
             "Photo":
          },
@@ -3392,7 +3211,7 @@
             "Address":"1804 S Tacoma Avenue",
             "Name":"Mountain Road Market",
             "Source":"Polk's 1940 Tacoma City Directory page 436",
-            "Notes":"Korin Fred Ayako",
+            "Notes":"Owner: Korin Fred Ayako",
             "Type":"Business",
             "Photo":
          },

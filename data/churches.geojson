@@ -40,6 +40,24 @@
       {
          "type":"Feature",
          "properties":{
+            "Address":"1505 Fawcett Avenue",
+            "Name":"Japanese Baptist Church",
+            "Source":"Ryo Munekata Interview, Polk's 1933 Tacoma City Directory page 350",
+            "Notes":"None",
+            "Type":"Business",
+            "Photo":
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -122.4417111,
+               47.24854372
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
             "Address":"1556 Market Street",
             "Name":"Previous Location of Tacoma Buddhist Church",
             "Source":"Morrison (1993, 57)",

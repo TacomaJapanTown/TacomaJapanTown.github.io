@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="leaflet.css" />
 	<script src="leaflet.js"></script>
 	<script src="jquery-2.1.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
 
 	<style>
 		#mapid { height: 50em; width: 100em; }
@@ -59,7 +61,7 @@
 					<div class="col-8 col-12-mobile" id="content">
 						<article id="main">
 							<header>
-
+              <input id="toggle" type="button" value="Pause/Play" onclick="toggleFunction()"/>
 								<div id="mapid"></div>
 
 								<!--Adding the script for the MovingMarker Plugin-->

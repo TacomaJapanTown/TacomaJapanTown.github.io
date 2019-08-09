@@ -128,19 +128,16 @@ var Transportation = $.getJSON("data/transportation.geojson",function(data){
   }).addTo(mymap);
 })
 
+function toggleFunction() {
+  if(!toggle) {
+    mymap.removeLayer(Businesses);
+  } else {
+    mymap.addLayer(Businesses);
+  }
+  toggle = !toggle;
+}
 var baseMaps = {
     "Gray": gray,
     "Satellite": Esri_WorldImagery
 };
-
-var overlayMaps = {
-    "Homes": Homes,
-    "Businesses": Businesses,
-    "Schools": Schools,
-    "Churches": Churches,
-    "Associations": Associations,
-    "Recreation": Recreation,
-    "Transportation": Transportation
-};
-
-L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+L.control.layers(baseMaps).addTo(mymap);

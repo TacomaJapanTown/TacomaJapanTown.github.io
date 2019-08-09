@@ -69,7 +69,7 @@ var homes = L.icon({
 var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (mymap) {
   var div = L.DomUtil.create('div', 'info legend');
-  div.innerHTML = "<img src=images/legend.jpg style='width: 15em;'></img>";
+  div.innerHTML = "<img src=images/legend.jpg style='width: 10em;'></img>";
   return div;
 };legend.addTo(mymap);
 

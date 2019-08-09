@@ -2,6 +2,7 @@
 //http://duspviz.mit.edu/web-map-workshop/map-symbolization/
 //http://maptimediliman.github.io/jsonlet-intro/
 //geojson.io
+//https://jsonformatter.curiousconcept.com/
 
 //Making the map
 var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
@@ -86,7 +87,7 @@ var Churches = $.getJSON("data/churches.geojson",function(data){
 var Homes = $.getJSON("data/homes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: homes});
       return marker;
@@ -97,7 +98,7 @@ var Homes = $.getJSON("data/homes.geojson",function(data){
 var Recreation = $.getJSON("data/recreation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: recreation});
       return marker;
@@ -108,7 +109,7 @@ var Recreation = $.getJSON("data/recreation.geojson",function(data){
 var Schools = $.getJSON("data/schools.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: schools});
       return marker;
@@ -119,7 +120,7 @@ var Schools = $.getJSON("data/schools.geojson",function(data){
 var Transportation = $.getJSON("data/transportation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: transportation});
       return marker;
@@ -133,13 +134,13 @@ var baseMaps = {
 };
 
 var overlayMaps = {
-    "Homes": Homes
-    //"Businesses": Businesses
-    //"Schools": Schools
-    //"Churches": Churches
-    //"Associations": Associations
-    //"Recreation": Recreation
-    //"Transportation": Transportation
+    "Homes": Homes,
+    "Businesses": Businesses,
+    "Schools": Schools,
+    "Churches": Churches,
+    "Associations": Associations,
+    "Recreation": Recreation,
+    "Transportation": Transportation
 };
 
 L.control.layers(baseMaps, overlayMaps).addTo(mymap);

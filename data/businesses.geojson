@@ -3118,24 +3118,6 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"2410 North 30th Street",
-            "Name":"Nakagawara Laundry",
-            "Source":"Watanabe (1986, 63)",
-            "Notes":"Shikataro Nakagawara",
-            "Type":"Business",
-            "Photo":"None"
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -122.4760946,
-               47.26905406
-            ]
-         }
-      },
-      {
-         "type":"Feature",
-         "properties":{
             "Address":"1118 South K Street",
             "Name":"Jinguji Produce",
             "Source":"Polk's 1933 Tacoma City Directory page 353",

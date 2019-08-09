@@ -17,10 +17,6 @@ var gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?acc
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-});
-
 //The pause/play function for the pause button
 function pauseButtonClick()
 {
@@ -78,7 +74,7 @@ legend.onAdd = function (mymap) {
 };legend.addTo(mymap);
 
 //loading the geojson of homes along the paths
-var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
+$.getJSON("data/pathstopshomes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
@@ -89,7 +85,7 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
   }).addTo(mymap);
 
   //loading the geojson of schools along the paths
-  var schools = $.getJSON("data/pathstopsschools.geojson",function(data){
+$.getJSON("data/pathstopsschools.geojson",function(data){
     L.geoJson(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
@@ -100,7 +96,7 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
     }).addTo(mymap);
 
     //loading the geojson of the JLS
-    var languageSchool = $.getJSON("data/jls.geojson",function(data){
+$.getJSON("data/jls.geojson",function(data){
       L.geoJson(data, {
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');
@@ -110,10 +106,5 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
         }
       }).addTo(mymap);
     });
-    var baseMaps = {
-      "Gray": gray,
-      "Satellite": Esri_WorldImagery
-    };
-    L.control.layers(baseMaps).addTo(mymap);
   })
 })

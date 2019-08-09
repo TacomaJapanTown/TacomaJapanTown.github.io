@@ -2,6 +2,10 @@
 //http://duspviz.mit.edu/web-map-workshop/map-symbolization/
 //http://maptimediliman.github.io/jsonlet-intro/
 //geojson.io
+//http://duspviz.mit.edu/web-map-workshop/leaflet-javascript-interactions/
+//https://jsonlint.com/
+
+
 
 //Making the map
 var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
@@ -103,7 +107,7 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
       }).addTo(mymap);
 
       //New button
-      function togglestops()
+      function toggleStops()
       {
         var geojsons = [schools, homes, jls];
         if(map.haslayer(geojsons)){

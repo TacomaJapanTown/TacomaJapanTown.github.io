@@ -63,7 +63,7 @@
             "Source":"Mary Hanneman",
             "Notes":"The language school moved twice. This was the first location.",
             "Type":"School",
-            "Photo":
+            "Photo":"None"
          },
          "geometry":{
             "type":"Point",
@@ -81,7 +81,7 @@
             "Source":"Watanabe (1986, 68)",
             "Notes":"The language school moved twice. This was the second location.",
             "Type":"School",
-            "Photo":
+            "Photo":"None"
          },
          "geometry":{
             "type":"Point",

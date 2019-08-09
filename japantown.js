@@ -127,15 +127,6 @@ var Transportation = $.getJSON("data/transportation.geojson",function(data){
     }
   }).addTo(mymap);
 })
-
-function toggleFunction() {
-  if(!toggle) {
-    mymap.removeLayer(Businesses);
-  } else {
-    mymap.addLayer(Businesses);
-  }
-  toggle = !toggle;
-}
 var baseMaps = {
     "Gray": gray,
     "Satellite": Esri_WorldImagery

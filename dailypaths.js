@@ -10,12 +10,16 @@
 //Making the map
 var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
 //Basemap
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+var gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
   id: 'mapbox.light',
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
+
+var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
 
 //The pause/play function for the pause button
 function pauseButtonClick()
@@ -106,16 +110,10 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
         }
       }).addTo(mymap);
     });
-    //New button
-    function toggleStops()
-    {
-      var geojsons = [schools, homes, languageSchool];
-      if(map.haslayer(geojsons)){
-        removeGeoJsons();
-      }
-      else {
-        addGeoJsons();
-      }
- }
+    var baseMaps = {
+        "Gray": gray,
+        "Satellite": Esri_WorldImagery
+    };
+    L.control.layers(baseMaps).addTo(mymap);
 })
 })

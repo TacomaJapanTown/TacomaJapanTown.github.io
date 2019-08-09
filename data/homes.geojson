@@ -6,8 +6,8 @@
          "properties":{
             "Address":"108 1/2 S 14th Street",
             "Name":"Palmer Apartments",
-            "Source":"Ito, 1920 city dir p654",
-            "Notes":" ",
+            "Source":"Ito (1926), Polk's 1920 Tacoma City Directory page 654",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -44,7 +44,7 @@
             "Name":"Seiji Konzo's House",
             "Source":"Kazuo Horita Interview, Polk's 1933 Tacoma City Directory page 389, Morrison (1993, 59)",
             "Notes":"None",
-            "Type":"Business",
+            "Type":"Home",
             "Photo":"None"
          },
          "geometry":{
@@ -78,8 +78,8 @@
          "properties":{
             "Address":"1124 Market Street",
             "Name":"Hiyashi",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, p58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -96,8 +96,8 @@
          "properties":{
             "Address":"1125 Court D",
             "Name":"Sazio Suzuki",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, p61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -132,8 +132,8 @@
          "properties":{
             "Address":"1130 Court C",
             "Name":"Genjiro Namba",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -150,8 +150,8 @@
          "properties":{
             "Address":"1126 1/2 Market Street",
             "Name":"Tuomo Sado",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -168,8 +168,8 @@
          "properties":{
             "Address":"1136 Fawcett Avenue",
             "Name":"Hoshide",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -204,8 +204,8 @@
          "properties":{
             "Address":"1319 Court C",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -222,8 +222,8 @@
          "properties":{
             "Address":"1318 Fawcett Avenue",
             "Name":"S. Toki",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -240,8 +240,8 @@
          "properties":{
             "Address":"1317 1/2 Court C",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -258,8 +258,8 @@
          "properties":{
             "Address":"1320 Fawcett Avenue",
             "Name":"Fuji",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -276,8 +276,8 @@
          "properties":{
             "Address":"1326 1/2 Fawcett Avenue",
             "Name":"Hasegawa",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -294,8 +294,8 @@
          "properties":{
             "Address":"1330 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -312,8 +312,8 @@
          "properties":{
             "Address":"1328 1/2 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -330,8 +330,8 @@
          "properties":{
             "Address":"1334 Fawcett Avenue",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -348,8 +348,8 @@
          "properties":{
             "Address":"1338 1/2 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -366,8 +366,8 @@
          "properties":{
             "Address":"1339 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -384,8 +384,8 @@
          "properties":{
             "Address":"1342 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -402,8 +402,8 @@
          "properties":{
             "Address":"1343 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -420,8 +420,8 @@
          "properties":{
             "Address":"1342 Fawcett Avenue",
             "Name":"Nyshizaki",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -438,8 +438,8 @@
          "properties":{
             "Address":"1342 1/2 Fawcett Avenue",
             "Name":"Sako",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -456,8 +456,8 @@
          "properties":{
             "Address":"1343 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -474,8 +474,8 @@
          "properties":{
             "Address":"1344 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -492,8 +492,8 @@
          "properties":{
             "Address":"1345 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -510,8 +510,8 @@
          "properties":{
             "Address":"1343 1/2 Fawcett Avenue",
             "Name":"Nagai",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -528,8 +528,8 @@
          "properties":{
             "Address":"1346 Broadway Street",
             "Name":"Nikko Cafe and Chinese Garden Restaurant",
-            "Source":"Munekata, 1929 city dir p867 Morrison p55 Munekat*",
-            "Notes":" ",
+            "Source":"Ryo Munekata Interview, 1929 Tacoma City Directory page 867, Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -546,8 +546,8 @@
          "properties":{
             "Address":"1345 Fawcett Avenue",
             "Name":"Sugihara and Namiki",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -564,8 +564,8 @@
          "properties":{
             "Address":"1348 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -582,8 +582,8 @@
          "properties":{
             "Address":"1347 1/2 Fawcett Avenue",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -600,8 +600,8 @@
          "properties":{
             "Address":"1353 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -618,8 +618,8 @@
          "properties":{
             "Address":"1355 1/2 Market Street",
             "Name":"Japanese Surname Business",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -636,8 +636,8 @@
          "properties":{
             "Address":"1422 Court C",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -654,8 +654,8 @@
          "properties":{
             "Address":"1421 Court A",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -672,8 +672,8 @@
          "properties":{
             "Address":"1481 Court A",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -690,8 +690,8 @@
          "properties":{
             "Address":"1501 Fawcett Avenue",
             "Name":"Nishimoto",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -708,8 +708,8 @@
          "properties":{
             "Address":"1505 Court C",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -726,8 +726,8 @@
          "properties":{
             "Address":"1508 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -744,8 +744,8 @@
          "properties":{
             "Address":"1510 Broadway Street",
             "Name":"Japanese surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -762,8 +762,8 @@
          "properties":{
             "Address":"1511 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -781,7 +781,7 @@
             "Address":"1510 Fawcett Avenue",
             "Name":"Mieko Home",
             "Source":"June Mieko Interview",
-            "Notes":"And then, they had another house on Fawcett, whic*",
+            "Notes":"",
             "Type":"Home",
             "Photo":"None"
          },
@@ -798,8 +798,8 @@
          "properties":{
             "Address":"1514 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -816,8 +816,8 @@
          "properties":{
             "Address":"1514 Fawcett Avenue",
             "Name":"Otsuka and Ueda",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -834,8 +834,8 @@
          "properties":{
             "Address":"1514 S Tacoma Avenue",
             "Name":"Ito",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -852,8 +852,8 @@
          "properties":{
             "Address":"1516 Fawcett Avenue",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -870,8 +870,8 @@
          "properties":{
             "Address":"1516 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -888,8 +888,8 @@
          "properties":{
             "Address":"1521 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -906,8 +906,8 @@
          "properties":{
             "Address":"1520 1/2 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -924,8 +924,8 @@
          "properties":{
             "Address":"1523 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -942,8 +942,8 @@
          "properties":{
             "Address":"1524 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -960,8 +960,8 @@
          "properties":{
             "Address":"1528 1/2 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -978,8 +978,8 @@
          "properties":{
             "Address":"1529 Fawcett Avenue",
             "Name":"Nakamura",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -996,8 +996,8 @@
          "properties":{
             "Address":"1530 Fawcett Avenue",
             "Name":"Uyeda",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1014,8 +1014,8 @@
          "properties":{
             "Address":"1532 Fawcett Avenue",
             "Name":"Shioze",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1032,8 +1032,8 @@
          "properties":{
             "Address":"1534 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1050,8 +1050,8 @@
          "properties":{
             "Address":"1537 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1068,8 +1068,8 @@
          "properties":{
             "Address":"1539 Fawcett Avenue",
             "Name":"Tsuchimochi",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1086,8 +1086,8 @@
          "properties":{
             "Address":"1540 1/2 Commerce Street",
             "Name":"Japanese surname",
-            "Source":"Morrison (1993) p54",
-            "Notes":" ",
+            "Source":"Morrison (1993, 52)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1104,8 +1104,8 @@
          "properties":{
             "Address":"1543 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1122,8 +1122,8 @@
          "properties":{
             "Address":"1545 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1140,8 +1140,8 @@
          "properties":{
             "Address":"1544 Fawcett Avenue",
             "Name":"Oyanaji",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1158,8 +1158,8 @@
          "properties":{
             "Address":"1551 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1176,8 +1176,8 @@
          "properties":{
             "Address":"1546 Fawcett Avenue",
             "Name":"Tamake and Inouye",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1194,8 +1194,8 @@
          "properties":{
             "Address":"1548 Fawcett Avenue",
             "Name":"Kondo and Nakamura",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1212,8 +1212,8 @@
          "properties":{
             "Address":"1552 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1230,8 +1230,8 @@
          "properties":{
             "Address":"1551 1/2 Fawcett Avenue",
             "Name":"Otsuka",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1248,8 +1248,8 @@
          "properties":{
             "Address":"1551 Fawcett Avenue",
             "Name":"Kurose",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1266,8 +1266,8 @@
          "properties":{
             "Address":"1553 S Tacoma Avenue",
             "Name":"Konkokyo Mamichikai and Rev. Otsubo",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1284,8 +1284,8 @@
          "properties":{
             "Address":"1556 Broadway Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1302,7 +1302,7 @@
          "properties":{
             "Address":"1702 S G Street",
             "Name":"Kuroda Home",
-            "Source":"Watanabe (1986) p69",
+            "Source":"Watanabe (1986, 69)",
             "Notes":"Wataro and Miyako Kuroda",
             "Type":"Home",
             "Photo":"None"
@@ -1320,8 +1320,8 @@
          "properties":{
             "Address":"1706 S Tacoma Avenue",
             "Name":"Furouchi",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1338,8 +1338,8 @@
          "properties":{
             "Address":"1708 S Tacoma Avenue",
             "Name":"Morikawa",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1354,10 +1354,10 @@
       {
          "type":"Feature",
          "properties":{
-            "Address":"1710 Fawcett  Avenue",
+            "Address":"1710 Fawcett Avenue",
             "Name":"Seizuwa",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1374,8 +1374,8 @@
          "properties":{
             "Address":"1718 Broadway Street",
             "Name":"K.K. Ome",
-            "Source":"Morrison (1993) p55",
-            "Notes":" ",
+            "Source":"Morrison (1993, 55)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1392,8 +1392,8 @@
          "properties":{
             "Address":"1712 S Tacoma Avenue",
             "Name":"Jno Mecko",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1410,8 +1410,8 @@
          "properties":{
             "Address":"1726 Market Street",
             "Name":"Ferndale Apartments",
-            "Source":"Morrison p57",
-            "Notes":"Hamada resident and manager, 4/8 residents have a*",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"Hamada resident and manager, 4/8 residents were Japanese.",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1428,8 +1428,8 @@
          "properties":{
             "Address":"1722 Fawcett Avenue",
             "Name":"Hata Home",
-            "Source":"Jack Hata",
-            "Notes":"[Jack's Home] That was on Fawcett Avenue. 1722 Fa*",
+            "Source":"Jack Hata Interview",
+            "Notes":"",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1446,8 +1446,8 @@
          "properties":{
             "Address":"1734 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1464,8 +1464,8 @@
          "properties":{
             "Address":"1735 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1482,8 +1482,8 @@
          "properties":{
             "Address":"1738 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1500,8 +1500,8 @@
          "properties":{
             "Address":"1727 Fawcett Avenue",
             "Name":"Noro",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1518,8 +1518,8 @@
          "properties":{
             "Address":"1736 Fawcett Avenue",
             "Name":"Ken Ishio",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1536,8 +1536,8 @@
          "properties":{
             "Address":"1740 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p57",
-            "Notes":" ",
+            "Source":"Morrison (1993, 57)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1554,8 +1554,8 @@
          "properties":{
             "Address":"1743 Jefferson Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1572,8 +1572,8 @@
          "properties":{
             "Address":"1744 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1590,8 +1590,8 @@
          "properties":{
             "Address":"1740 1/2 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1608,8 +1608,8 @@
          "properties":{
             "Address":"1740 1/2 Fawcett Avenue",
             "Name":"Kinosta",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1626,8 +1626,8 @@
          "properties":{
             "Address":"1745 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1644,8 +1644,8 @@
          "properties":{
             "Address":"1746 Fawcett Avenue",
             "Name":"Urushibata Home",
-            "Source":"Kunio, 1933 city dir p697 Morrison p58",
-            "Notes":"[Where Kunio lived] 17th and 19th on Fawcett.",
+            "Source":"Kunio Urushibata Interview, 1933 Tacoma City Directory page 697, Morrison (1993, 58)",
+            "Notes":"Kunio later changed his last name to Shibata.",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1662,8 +1662,8 @@
          "properties":{
             "Address":"1748 Fawcett Avenue",
             "Name":"Sato",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1680,8 +1680,8 @@
          "properties":{
             "Address":"1752 Fawcett Avenue",
             "Name":"Mizumoto",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1698,8 +1698,8 @@
          "properties":{
             "Address":"1752 Market Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p56",
-            "Notes":" ",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1716,8 +1716,8 @@
          "properties":{
             "Address":"1904 Market Street",
             "Name":"Modern Apartments",
-            "Source":"Morrison (1993) p56",
-            "Notes":"C.S. Miya zaki",
+            "Source":"Morrison (1993, 56)",
+            "Notes":"C.S. Miyazaki",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1734,8 +1734,8 @@
          "properties":{
             "Address":"1919 Fawcett Avenue",
             "Name":"Enomato",
-            "Source":"Morrison (1993) p58",
-            "Notes":" ",
+            "Source":"Morrison (1993, 58)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1752,8 +1752,8 @@
          "properties":{
             "Address":"1948 S Tacoma Avenue",
             "Name":"Oikawa",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1770,8 +1770,8 @@
          "properties":{
             "Address":"1946 S Tacoma Avenue",
             "Name":"J.T. Kazawa",
-            "Source":"Morrison (1993) p59",
-            "Notes":" ",
+            "Source":"Morrison (1993, 59)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1806,8 +1806,8 @@
          "properties":{
             "Address":"309 S 17th Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1824,8 +1824,8 @@
          "properties":{
             "Address":"310 1/2 S 15th Street",
             "Name":"Suye Asazuma",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1842,8 +1842,8 @@
          "properties":{
             "Address":"311 S 17th Street",
             "Name":"Takada",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1860,8 +1860,8 @@
          "properties":{
             "Address":"314 S 15th Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1878,8 +1878,8 @@
          "properties":{
             "Address":"315 S 17th Street",
             "Name":"Fumide Node",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1896,8 +1896,8 @@
          "properties":{
             "Address":"318 S 15th Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1914,8 +1914,8 @@
          "properties":{
             "Address":"318 1/2 S 15th Street",
             "Name":"Japanese Surname",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1932,8 +1932,8 @@
          "properties":{
             "Address":"412 S 15th Street",
             "Name":"Taira",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1950,8 +1950,8 @@
          "properties":{
             "Address":"413 S 15th Street",
             "Name":"Wakabayashu",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1968,8 +1968,8 @@
          "properties":{
             "Address":"413 S 17th Street",
             "Name":"Tatakimoto and Nakano",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -1986,8 +1986,8 @@
          "properties":{
             "Address":"414 S 17th Street",
             "Name":"Tsudo",
-            "Source":"Morrison (1993) p61",
-            "Notes":" ",
+            "Source":"Morrison (1993, 61)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2004,8 +2004,8 @@
          "properties":{
             "Address":"414 S 15th Street",
             "Name":"Tamaka",
-            "Source":"Morrison (1993) p60",
-            "Notes":" ",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2023,7 +2023,7 @@
             "Address":"511 S 15th Street",
             "Name":"Takaoka Home",
             "Source":"Chizu",
-            "Notes":"I was born in Tacoma, 511 South 15th Street, Morr*",
+            "Notes":"'I was born in Tacoma, 511 South 15th Street'-Chizu Takaoka",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2040,8 +2040,8 @@
          "properties":{
             "Address":"707 S 15th Street",
             "Name":"Kameji Nutahara",
-            "Source":"Watanabe (1986) p68",
-            "Notes":"Superintendent of Baptist Church and President of*",
+            "Source":"Watanabe (1986, 68)",
+            "Notes":"Kameji Nutahara was the Superintendent of the Baptist Church.",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2058,8 +2058,8 @@
          "properties":{
             "Address":"8102 1/2 South Tacoma Way",
             "Name":"Kubo Yukichi",
-            "Source":"1929 city dir p1091",
-            "Notes":" ",
+            "Source":"1929 Tacoma City Directory page 1091",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2076,7 +2076,7 @@
          "properties":{
             "Address":"8202 1/2 South Tacoma Way",
             "Name":"Hayashi",
-            "Source":"1941 city dir p1091",
+            "Source":"1941 Tacoma City Directory page 1091",
             "Notes":"Mrs. Shige Hayashi",
             "Type":"Home",
             "Photo":"None"
@@ -2094,8 +2094,8 @@
          "properties":{
             "Address":"928 Fawcett Avenue",
             "Name":"Fujimoto Home",
-            "Source":"Yoshioko",
-            "Notes":"Yoshioko also lists living at 1710 Fawcett, Morri*",
+            "Source":"Fujimoto Sisters Interview",
+            "Notes":"Yoshioko also remembers living at 1710 Fawcett.",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2112,8 +2112,8 @@
          "properties":{
             "Address":"906 S 14th Street",
             "Name":"Yoshimura",
-            "Source":"Morrison p60",
-            "Notes":"Tsurao Yoshimura, managager of Okamura Co.",
+            "Source":"Morrison (1993, 60)",
+            "Notes":"Tsurao Yoshimura was the managager of Okamura Company Tacoma location.",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2130,8 +2130,8 @@
          "properties":{
             "Address":"1717 North Cedar",
             "Name":"Sunya Pratt's House",
-            "Source":"Munekata, Justin Wadland",
-            "Notes":" ",
+            "Source":"Justin Wadland",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2149,7 +2149,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 2",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2167,7 +2167,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 3",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2185,7 +2185,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 4",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2203,7 +2203,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 5",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2221,7 +2221,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 11",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2239,7 +2239,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 10",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2257,7 +2257,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 12",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2275,7 +2275,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 6",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2293,7 +2293,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 7",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2311,7 +2311,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 14",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2329,7 +2329,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 1",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2347,7 +2347,7 @@
             "Address":"St Paul Avenue",
             "Name":"House 8",
             "Source":"1926 Metseker Atlas",
-            "Notes":" ",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },
@@ -2364,8 +2364,8 @@
          "properties":{
             "Address":"2346 S I Street",
             "Name":"Nimura Yashuhiko",
-            "Source":"1933 city dir p.801",
-            "Notes":" ",
+            "Source":"1933 Tacoma City Directory page 801",
+            "Notes":"None",
             "Type":"Home",
             "Photo":"None"
          },

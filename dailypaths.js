@@ -114,7 +114,7 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
           return marker;
         }
       }).addTo(mymap);
-      }
-    })
-  })
+    });
+ })
 })
+}

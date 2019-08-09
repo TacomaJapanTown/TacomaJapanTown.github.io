@@ -26,27 +26,6 @@ function pauseButtonClick()
   }
 }
 
-//New button
-function togglestops()
-{
-  var geojsons = [schools, homes, jls];
-  if(map.haslayer(geojsons)){
-    removeGeoJsons();
-    }
-      else {
-        addGeoJsons();
-      }
-}
-
-
-
-
-
-
-
-
-
-
 var green = L.icon({
   iconUrl: 'images/green.png', //icon from ttps://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
   iconSize: [15, 15],
@@ -123,6 +102,17 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
         }
       }).addTo(mymap);
 
+      //New button
+      function togglestops()
+      {
+        var geojsons = [schools, homes, jls];
+        if(map.haslayer(geojsons)){
+          removeGeoJsons();
+        }
+        else {
+          addGeoJsons();
+        }
+      }
     })
   })
 })

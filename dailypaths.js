@@ -67,7 +67,7 @@ var homes = L.icon({
 //New button
 function toggleStops()
 {
-  var geojsons = [schools, homes, jls];
+  var geojsons = [schools, homes, languageSchool];
   if(map.haslayer(geojsons)){
     removeGeoJsons();
   }
@@ -105,7 +105,7 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
     }).addTo(mymap);
 
     //loading the geojson of the JLS
-    var jls = $.getJSON("data/jls.geojson",function(data){
+    var languageSchool = $.getJSON("data/jls.geojson",function(data){
       L.geoJson(data, {
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');

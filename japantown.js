@@ -6,15 +6,15 @@
 //Making the map
 var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
 //Basemap
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+var Gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
   id: 'mapbox.light',
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
-}).addTo(mymap);
+//}).addTo(mymap);
 
-//var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-	//attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+var Satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 //});
 
 var schools = L.icon({
@@ -61,7 +61,7 @@ var Associations = $.getJSON("data/associations.geojson",function(data){
   }).addTo(mymap);
 })
 
-$.getJSON("data/businesses.geojson",function(data){
+var Businesses = $.getJSON("data/businesses.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo:'+feature.properties.Photo+'</p>');
@@ -72,7 +72,7 @@ $.getJSON("data/businesses.geojson",function(data){
   }).addTo(mymap);
 })
 
-$.getJSON("data/churches.geojson",function(data){
+var Churches = $.getJSON("data/churches.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo:'+feature.properties.Photo+'</p>');
@@ -83,18 +83,7 @@ $.getJSON("data/churches.geojson",function(data){
   }).addTo(mymap);
 })
 
-$.getJSON("data/government.geojson",function(data){
-  pathStops = L.geoJson(data, {
-    onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
-    }, pointToLayer: function (feature, latlng) {
-      var marker = L.marker(latlng,{icon: government});
-      return marker;
-    }
-  }).addTo(mymap);
-})
-
-$.getJSON("data/homes.geojson",function(data){
+var Homes = $.getJSON("data/homes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
@@ -105,7 +94,7 @@ $.getJSON("data/homes.geojson",function(data){
   }).addTo(mymap);
 })
 
-$.getJSON("data/recreation.geojson",function(data){
+var Recreation = $.getJSON("data/recreation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
@@ -116,7 +105,7 @@ $.getJSON("data/recreation.geojson",function(data){
   }).addTo(mymap);
 })
 
-$.getJSON("data/schools.geojson",function(data){
+var Schools = $.getJSON("data/schools.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
@@ -127,7 +116,7 @@ $.getJSON("data/schools.geojson",function(data){
   }).addTo(mymap);
 })
 
-$.getJSON("data/transportation.geojson",function(data){
+var Transportation = $.getJSON("data/transportation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');

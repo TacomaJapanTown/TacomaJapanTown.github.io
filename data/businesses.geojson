@@ -817,9 +817,9 @@
             "Address":"1324 Market Street",
             "Name":"Panama Service and Gas Station",
             "Source":"Ito (1926), Polk's 1933 Tacoma City Directory page 821",
-            "Notes":"None",
+            "Notes":"The garage was ran by the Otsuka family (see photo).",
             "Type":"Business",
-            "Photo":"None"
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/ref/collection/p17061coll21/id/36803/rec/8 target=_blank><img src=\"images/panamagarage.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2203,7 +2203,7 @@
             "Address":"1554 1/2 Market Street",
             "Name":"Columbus, Astor, or Hiroshimaya Hotel",
             "Source":"Ito (1926), Polk's 1933 Tacoma City Directory page 163, Morrison (1993, 57)",
-            "Notes":"Also called the Columbine Hotel owned by O. Okawa.",
+            "Notes":"Also called the Columbine Hotel owned by O. Okawa. <a href='http://cdm17061.contentdm.oclc.org/cdm/ref/collection/p17061coll21/id/11450/rec/34/'>The Buddhist Church briefly held meetings here before they moved to Fawcett Avenue.</a>",
             "Type":"Business",
             "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/11935/rec/4 target=_blank><img src=\"images/lorenz.jpg\" width=\"150em\">"
          },
@@ -2493,7 +2493,7 @@
             "Source":"Chizu Takaoka Interview, Polk's 1929 Tacoma City Directory page 305",
             "Notes":"None",
             "Type":"Business",
-            "Photo":"None"
+            "Photo":"Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/ref/collection/p17061coll21/id/34055/rec/7 target=_blank><img src=\"images/fukuifamily.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -2545,7 +2545,7 @@
             "Address":"1355 Market Street",
             "Name":"Hotel Baker/Hiroshimaya",
             "Source":"Tacoma Public Library Image Archive (see below)",
-            "Notes":"Owned by Seiishi Kano",
+            "Notes":"Owned by Seiishi Kano. There are photos of an unidentified couple getting married on the <a href='http://cdm17061.contentdm.oclc.org/cdm/ref/collection/p17061coll21/id/1539/rec/26'>Tacoma Public Library website.</a>",
             "Type":"Business",
             "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/24011/rec/6 target=_blank><img src=\"images/hiroshimaya.jpg\" width=\"150em\">"
          },

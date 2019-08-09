@@ -6,16 +6,16 @@
 //Making the map
 var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
 //Basemap
-var Gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+var gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
   id: 'mapbox.light',
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
-//}).addTo(mymap);
+}).addTo(mymap);
 
 var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-//});
+});
 
 var schools = L.icon({
   iconUrl: 'images/schools.png', //icon from https://mapicons.mapsmarker.com/
@@ -134,12 +134,12 @@ var baseMaps = {
 
 var overlayMaps = {
     "Homes": Homes
-    "Businesses": Businesses
-    "Schools": Schools
-    "Churches": Churches
-    "Associations": Associations
-    "Recreation": Recreation
-    "Transportation": Transportation
+    //"Businesses": Businesses
+    //"Schools": Schools
+    //"Churches": Churches
+    //"Associations": Associations
+    //"Recreation": Recreation
+    //"Transportation": Transportation
 };
 
 L.control.layers(baseMaps, overlayMaps).addTo(mymap);

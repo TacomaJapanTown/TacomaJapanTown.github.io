@@ -1,6 +1,6 @@
 //Special thanks to these tutorials and tools:
 //http://duspviz.mit.edu/web-map-workshop/map-symbolization/
-//http://maptimediliman.github.io/jsonlet-intro/
+//http://maptimediliman.github.io/jsonlet-intro.html
 //geojson.io
 //https://jsonformatter.curiousconcept.com/
 
@@ -54,7 +54,7 @@ var transportation = L.icon({
 var Associations = $.getJSON("data/associations.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo:'+feature.properties.Photo+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: associations});
       return marker;
@@ -65,7 +65,7 @@ var Associations = $.getJSON("data/associations.geojson",function(data){
 var Businesses = $.getJSON("data/businesses.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo:'+feature.properties.Photo+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: businesses});
       return marker;
@@ -76,7 +76,7 @@ var Businesses = $.getJSON("data/businesses.geojson",function(data){
 var Churches = $.getJSON("data/churches.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo:'+feature.properties.Photo+'</p>');
+      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: churches});
       return marker;

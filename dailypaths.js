@@ -13,7 +13,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
 
-//The pause/play function for the button
+//The pause/play function for the pause button
 function pauseButtonClick()
 {
   var markerList = [marker1, marker2, marker3, marker4, marker5];
@@ -25,6 +25,27 @@ function pauseButtonClick()
     markerList[i].pause();
   }
 }
+
+//New button
+function togglestops()
+{
+  var geojsons = [schools, homes, jls];
+  if(map.haslayer(geojsons)){
+    removeGeoJsons();
+    }
+      else {
+        addGeoJsons();
+      }
+}
+
+
+
+
+
+
+
+
+
 
 var green = L.icon({
   iconUrl: 'images/green.png', //icon from ttps://www.flaticon.com/free-icon/circle-shape-outline_25477#term=circle%20outline&page=1&position=1
@@ -64,13 +85,13 @@ var homes = L.icon({
 //Putting the legend on the mao
 var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (mymap) {
-    var div = L.DomUtil.create('div', 'info legend');
-    div.innerHTML = "<img src=images/legend.jpg style='width: 15em;'></img>";
-    return div;
+  var div = L.DomUtil.create('div', 'info legend');
+  div.innerHTML = "<img src=images/legend.jpg style='width: 15em;'></img>";
+  return div;
 };legend.addTo(mymap);
 
 //loading the geojson of homes along the paths
-$.getJSON("data/pathstopshomes.geojson",function(data){
+var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p>');
@@ -81,7 +102,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
   }).addTo(mymap);
 
   //loading the geojson of schools along the paths
-  $.getJSON("data/pathstopsschools.geojson",function(data){
+  var schools = $.getJSON("data/pathstopsschools.geojson",function(data){
     L.geoJson(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><p>'+feature.properties.Photo+'</p>');
@@ -92,7 +113,7 @@ $.getJSON("data/pathstopshomes.geojson",function(data){
     }).addTo(mymap);
 
     //loading the geojson of the JLS
-    $.getJSON("data/jls.geojson",function(data){
+    var jls = $.getJSON("data/jls.geojson",function(data){
       L.geoJson(data, {
         onEachFeature: function (feature, layer) {
           layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Source: '+feature.properties.Source+'</p><a href=https://www.loc.gov/item/wa0563/ target=_blank><img src=images/jls.jpg width=125em>');

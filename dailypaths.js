@@ -115,3 +115,5 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
       "Satellite": Esri_WorldImagery
     };
     L.control.layers(baseMaps).addTo(mymap);
+  })
+})

@@ -64,7 +64,16 @@ var homes = L.icon({
   iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
   iconSize: [30, 35], //1a77c9
 });
-
+//New button
+function toggleStops()
+{
+  var geojsons = [schools, homes, jls];
+  if(map.haslayer(geojsons)){
+    removeGeoJsons();
+  }
+  else {
+    addGeoJsons();
+  }
 //Putting the legend on the mao
 var legend = L.control({position: 'bottomleft'});
 legend.onAdd = function (mymap) {
@@ -105,17 +114,6 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
           return marker;
         }
       }).addTo(mymap);
-
-      //New button
-      function toggleStops()
-      {
-        var geojsons = [schools, homes, jls];
-        if(map.haslayer(geojsons)){
-          removeGeoJsons();
-        }
-        else {
-          addGeoJsons();
-        }
       }
     })
   })

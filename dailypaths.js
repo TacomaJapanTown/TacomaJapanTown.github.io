@@ -116,6 +116,6 @@ var homes = $.getJSON("data/pathstopshomes.geojson",function(data){
       else {
         addGeoJsons();
       }
- })
+ }
 })
-}
+})

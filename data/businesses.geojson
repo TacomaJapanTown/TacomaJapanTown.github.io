@@ -801,7 +801,7 @@
             "Source":"Morrison (1993, 56)",
             "Notes":"Five of nine residents had a Japanese Surname.",
             "Type":"Business",
-            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/34847/rec/1 target=_blank><img src=\"images/victoria.jpg\" width=\"150em\">",
+            "Photo":"None"
          },
          "geometry":{
             "type":"Point",
@@ -927,7 +927,7 @@
             "Source":"Riyeko Fujimoto Interview, Polk's 1933 Tacoma City Directory page 821",
             "Notes":"Riyeko's family lived at the Vendome Hotel.",
             "Type":"Business",
-            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/10075/rec/1 target=_blank><img src=\"images/vendome.jpg\" width=\"150em\">",
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/10075/rec/1 target=_blank><img src=\"images/vendome.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",

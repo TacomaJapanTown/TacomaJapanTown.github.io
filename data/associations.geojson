@@ -9,7 +9,7 @@
             "Source":"Morrison (1993, 56), Ryo Munekata Interview, Polk's 1920 Tacoma City Directory page 899",
             "Notes":"None",
             "Type":"Association",
-            "Photo":
+            "Photo":"None"
          },
          "geometry":{
             "type":"Point",
@@ -27,7 +27,7 @@
             "Source":"Morrison (1993, 55), Watanabe (1986, 79)",
             "Notes":1911,
             "Type":"Association",
-            "Photo":
+            "Photo":"None"
          },
          "geometry":{
             "type":"Point",
@@ -81,7 +81,7 @@
             "Source":"Polk's 1933 Tacoma City Directory page 350",
             "Notes":"Directory: 'Carl S Miyazaki sec'",
             "Type":"Association",
-            "Photo":
+            "Photo":"None"
          },
          "geometry":{
             "type":"Point",

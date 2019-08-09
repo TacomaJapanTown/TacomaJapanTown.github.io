@@ -13,7 +13,7 @@ var Gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?acc
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 //}).addTo(mymap);
 
-var Satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 //});
 
@@ -126,3 +126,20 @@ var Transportation = $.getJSON("data/transportation.geojson",function(data){
     }
   }).addTo(mymap);
 })
+
+var baseMaps = {
+    "Gray": gray,
+    "Satellite": Esri_WorldImagery
+};
+
+var overlayMaps = {
+    "Homes": Homes
+    "Businesses": Businesses
+    "Schools": Schools
+    "Churches": Churches
+    "Associations": Associations
+    "Recreation": Recreation
+    "Transportation": Transportation
+};
+
+L.control.layers(baseMaps, overlayMaps).addTo(mymap);

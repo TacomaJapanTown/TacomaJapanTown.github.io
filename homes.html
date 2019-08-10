@@ -6,11 +6,19 @@
 -->
 <html>
 	<head>
-		<title>Right side bar</title>
+		<title>Homes</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="main.css" />
 		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+		<link rel="stylesheet" href="leaflet.css" />
+		<script src="leaflet.js"></script>
+		<script src="jquery-2.1.1.min.js"></script>
+
+		<style>
+			#mapid { height: 50em; width: 65em; }
+		</style>
+
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -48,7 +56,51 @@
 							<div class="col-8 col-12-mobile" id="content">
 								<article id="main">
 									<header>
-										<h2><a href="#">Right Sidebar</a></h2>
+										<h2><a>Homes</a></h2>
+										<div id="mapid"></div>
+										<script>
+
+										var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
+										//Basemap
+										L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+										  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+										  maxZoom: 18,
+										  id: 'mapbox.light',
+										  accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
+										}).addTo(mymap);
+
+										var homes = L.icon({
+										  iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
+										  iconSize: [30, 35],
+										});
+
+										$.getJSON("data/homes.geojson",function(data){
+										  pathStops = L.geoJson(data, {
+										    onEachFeature: function (feature, layer) {
+										      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
+										    }, pointToLayer: function (feature, latlng) {
+										      var marker = L.marker(latlng,{icon: homes});
+										      return marker;
+										    }
+										  }).addTo(mymap);
+										})
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										</script>
 										<p>
 											Morbi convallis lectus malesuada sed fermentum dolore amet
 										</p>

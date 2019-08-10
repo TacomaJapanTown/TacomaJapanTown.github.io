@@ -1031,7 +1031,7 @@
          "type":"Feature",
          "properties":{
             "Address":"1334 Broadway Street",
-            "Name":"Nishioka and Mori Barber Shop and Mori Dry Cleane*",
+            "Name":"Nishioka and Mori Barber Shop and Mori Dry Cleaners",
             "Source":"Morrison (1993, 56), Watanabe (1986, 65), Ryo Munekata Interview",
             "Notes":"Owners: Kiyo Nishioka and Jotaro Mori",
             "Type":"Business",
@@ -1467,7 +1467,7 @@
             "Source":"Ito (1926), Morrison (1993, 55)",
             "Notes":"The Furuya Company was a large Japanese store with three branches on the West Coast. You can find more information in the book <i>Strangers from a Different Shore</i> by Ronald Takaki (1989, 186).",
             "Type":"Business",
-            "Photo":"None"
+            "Photo":"<a href=http://ddr.densho.org/ddr-densho-109-86/ target=_blank><img src=\"images/furuya.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -1665,7 +1665,7 @@
             "Source":"Morrison (1993, 55), Watanabe (1986, 61)",
             "Notes":"Owner: Jusuke Fukutomi",
             "Type":"Business",
-            "Photo":"None"
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/7403/rec/1 target=_blank><img src=\"images/elgin.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",
@@ -1719,7 +1719,7 @@
             "Source":"Morrison (1993, 55), Ito (1926), Polk's 1933 Tacoma City Directory page 768",
             "Notes":"Owner: Magoichi Yamane",
             "Type":"Business",
-            "Photo":"None"
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/7403/rec/1 target=_blank><img src=\"images/elgin.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",

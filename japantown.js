@@ -18,10 +18,6 @@ var schools = L.icon({
   iconUrl: 'images/schools.png', //icon from https://mapicons.mapsmarker.com/
   iconSize: [30, 35],
 });
-var homes = L.icon({
-  iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
-});
 var associations = L.icon({
   iconUrl: 'images/associations.png', //icon from https://mapicons.mapsmarker.com/
   iconSize: [30, 35],
@@ -75,17 +71,6 @@ $.getJSON("data/churches.geojson",function(data){
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
     }, pointToLayer: function (feature, latlng) {
       var marker = L.marker(latlng,{icon: churches});
-      return marker;
-    }
-  }).addTo(mymap);
-})
-
-$.getJSON("data/homes.geojson",function(data){
-  pathStops = L.geoJson(data, {
-    onEachFeature: function (feature, layer) {
-      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
-    }, pointToLayer: function (feature, latlng) {
-      var marker = L.marker(latlng,{icon: homes});
       return marker;
     }
   }).addTo(mymap);

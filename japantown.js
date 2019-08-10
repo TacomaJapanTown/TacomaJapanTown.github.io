@@ -5,18 +5,14 @@
 //https://jsonformatter.curiousconcept.com/
 
 //Making the map
-var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
+L.map('mapid').setView([47.256105, -122.443722], 14);
 //Basemap
-var gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
   id: 'mapbox.light',
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
 }).addTo(mymap);
-
-var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-});
 
 var schools = L.icon({
   iconUrl: 'images/schools.png', //icon from https://mapicons.mapsmarker.com/
@@ -51,7 +47,7 @@ var transportation = L.icon({
   iconSize: [30, 35],
 });
 
-var Associations = $.getJSON("data/associations.geojson",function(data){
+$.getJSON("data/associations.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
@@ -62,7 +58,7 @@ var Associations = $.getJSON("data/associations.geojson",function(data){
   }).addTo(mymap);
 })
 
-var Businesses = $.getJSON("data/businesses.geojson",function(data){
+$.getJSON("data/businesses.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
@@ -73,7 +69,7 @@ var Businesses = $.getJSON("data/businesses.geojson",function(data){
   }).addTo(mymap);
 })
 
-var Churches = $.getJSON("data/churches.geojson",function(data){
+$.getJSON("data/churches.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
@@ -84,7 +80,7 @@ var Churches = $.getJSON("data/churches.geojson",function(data){
   }).addTo(mymap);
 })
 
-var Homes = $.getJSON("data/homes.geojson",function(data){
+$.getJSON("data/homes.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
@@ -95,7 +91,7 @@ var Homes = $.getJSON("data/homes.geojson",function(data){
   }).addTo(mymap);
 })
 
-var Recreation = $.getJSON("data/recreation.geojson",function(data){
+$.getJSON("data/recreation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
@@ -106,7 +102,7 @@ var Recreation = $.getJSON("data/recreation.geojson",function(data){
   }).addTo(mymap);
 })
 
-var Schools = $.getJSON("data/schools.geojson",function(data){
+$.getJSON("data/schools.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
@@ -117,7 +113,7 @@ var Schools = $.getJSON("data/schools.geojson",function(data){
   }).addTo(mymap);
 })
 
-var Transportation = $.getJSON("data/transportation.geojson",function(data){
+$.getJSON("data/transportation.geojson",function(data){
   pathStops = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
@@ -127,8 +123,3 @@ var Transportation = $.getJSON("data/transportation.geojson",function(data){
     }
   }).addTo(mymap);
 })
-var baseMaps = {
-    "Gray": gray,
-    "Satellite": Esri_WorldImagery
-};
-L.control.layers(baseMaps).addTo(mymap);

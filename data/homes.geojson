@@ -2131,9 +2131,9 @@
             "Address":"1717 North Cedar",
             "Name":"Sunya Pratt's House",
             "Source":"Justin Wadland",
-            "Notes":"None",
+            "Notes":"Sunya Pratt was the first non-Asian person ordained as a Buddhist minister. You can read more about Sunya <a href='https://historylink.org/File/20731'>here.</a>",
             "Type":"Home",
-            "Photo":"None"
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/30339/rec/1 target=_blank><img src=\"images/sunyapratt.jpg\" width=\"150em\">"
          },
          "geometry":{
             "type":"Point",

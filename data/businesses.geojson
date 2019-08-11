@@ -727,9 +727,9 @@
             "Address":"1316 1/2 Broadway",
             "Name":"Victoria Hotel",
             "Source":"Ito (1926), Polk's 1920 Tacoma City Directory page 940, Morrison (1993, 56)",
-            "Notes":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/34847/rec/1 target=_blank><img src=\"images/victoria.jpg\" width=\"150em\">",
+            "Notes":"None",
             "Type":"Business",
-            "Photo":"None"
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/34847/rec/1 target=_blank><img src=\"images/victoria.jpg\" width=\"150em\">",
          },
          "geometry":{
             "type":"Point",

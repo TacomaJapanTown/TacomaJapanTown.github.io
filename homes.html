@@ -1,289 +1,127 @@
 <!DOCTYPE HTML>
 <!--
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Helios by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Homes</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="main.css" />
-		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
-		<link rel="stylesheet" href="leaflet.css" />
-		<script src="leaflet.js"></script>
-		<script src="jquery-2.1.1.min.js"></script>
-
-		<style>
-			#mapid { height: 50em; width: 65em; }
-		</style>
-
-	</head>
+<head>
+	<title>Homes</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="main.css" />
+	<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+	<link rel="stylesheet" href="leaflet.css" />
+	<script src="leaflet.js"></script>
+	<script src="jquery-2.1.1.min.js"></script>
+	<style>
+	#mapid { height: 55em; width: 100em; }
+	</style>
+</head>
 <body class="right-sidebar is-preload">
-		<div id="page-wrapper">
-			<!-- Header -->
-				<div id="header">
-
-					<!-- Inner -->
-						<div class="inner">
-							<header>
-
-							</header>
-						</div>
-
-						<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li>
-									<a>Maps</a>
-									<ul>
-										<li><a href="dailypaths.html">Daily Paths</a></li>
-										<li>
-											<a>Japantown Maps&hellip;</a>
-											<ul>
-												<li><a href="businesses.html">Businesses</a></li>
-												<li><a href="homes.html">Homes</a></li>
-												<li><a href="moreplaces.html">More Japantown Places</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="furtherreading.html">Further Reading</a></li>
-								<li><a href="references.html">References</a></li>
-							</ul>
-						</nav>
-					</div>
-			<!-- Main -->
-				<div class="wrapper style1">
-
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-8 col-12-mobile" id="content">
-								<article id="main">
-									<header>
-										<h2><a>Homes</a></h2>
-										<div id="mapid"></div>
-										<script>
-
-										var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
-										//Basemap
-										L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-										  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-										  maxZoom: 18,
-										  id: 'mapbox.light',
-										  accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
-										}).addTo(mymap);
-
-										var homes = L.icon({
-										  iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
-										  iconSize: [30, 35],
-										});
-
-										$.getJSON("data/homes.geojson",function(data){
-										  pathStops = L.geoJson(data, {
-										    onEachFeature: function (feature, layer) {
-										      layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
-										    }, pointToLayer: function (feature, latlng) {
-										      var marker = L.marker(latlng,{icon: homes});
-										      return marker;
-										    }
-										  }).addTo(mymap);
-										})
-										</script>
-										<p>
-											Morbi convallis lectus malesuada sed fermentum dolore amet
-										</p>
-									</header>
-									<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-									<p>
-										Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
-										posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
-										lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum
-										consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue
-										interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia
-										natoque aenean scelerisque vel lacinia mollis quam sodales congue.
-									</p>
-									<section>
-										<header>
-											<h3>Ultrices tempor sagittis nisl</h3>
-										</header>
-										<p>
-											Nascetur volutpat nibh ullamcorper vivamus at purus. Cursus ultrices porttitor sollicitudin imperdiet
-											at pretium tellus in euismod a integer sodales neque. Nibh quis dui quis mattis eget imperdiet venenatis
-											feugiat. Neque primis ligula cum erat aenean tristique luctus risus ipsum praesent iaculis. Fermentum elit
-											fringilla consequat dis arcu. Pellentesque mus tempor vitae pretium sodales porttitor lacus. Phasellus
-											egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra magna.
-										</p>
-										<p>
-											Eleifend auctor turpis magnis sed porta nisl pretium. Aenean suspendisse nulla eget sed etiam parturient
-											orci cursus nibh. Quisque eu nec neque felis laoreet diam morbi egestas. Dignissim cras rutrum consectetur
-											ut penatibus fermentum nibh erat malesuada varius.
-										</p>
-									</section>
-									<section>
-										<header>
-											<h3>Augue euismod feugiat tempus</h3>
-										</header>
-										<p>
-											Pretium tellus in euismod a integer sodales neque. Nibh quis dui quis mattis eget imperdiet venenatis
-											feugiat. Neque primis ligula cum erat aenean tristique luctus risus ipsum praesent iaculis. Fermentum elit
-											ut nunc urna volutpat donec cubilia commodo risus morbi. Lobortis vestibulum velit malesuada ante
-											egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra magna.
-										</p>
-									</section>
-								</article>
-							</div>
-							<div class="col-4 col-12-mobile" id="sidebar">
-								<hr class="first" />
-								<section>
-									<header>
-										<h3><a href="#">Accumsan sed penatibus</a></h3>
-									</header>
-									<p>
-										Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-										porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-										magna tempus feugiat veroeros.
-									</p>
-									<footer>
-										<a href="#" class="button">Learn More</a>
-									</footer>
-								</section>
-								<hr />
-								<section>
-									<header>
-										<h3><a href="#">Sed lorem etiam consequat</a></h3>
-									</header>
-									<p>
-										Tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-									</p>
-									<div class="row gtr-50">
-										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
-										</div>
-										<div class="col-8">
-											<h4>Nibh sed cubilia</h4>
-											<p>
-												Amet nullam fringilla nibh nulla convallis tique ante proin.
-											</p>
-										</div>
-										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-										</div>
-										<div class="col-8">
-											<h4>Proin sed adipiscing</h4>
-											<p>
-												Amet nullam fringilla nibh nulla convallis tique ante proin.
-											</p>
-										</div>
-										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
-										</div>
-										<div class="col-8">
-											<h4>Lorem feugiat magna</h4>
-											<p>
-												Amet nullam fringilla nibh nulla convallis tique ante proin.
-											</p>
-										</div>
-										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
-										</div>
-										<div class="col-8">
-											<h4>Sed tempus fringilla</h4>
-											<p>
-												Amet nullam fringilla nibh nulla convallis tique ante proin.
-											</p>
-										</div>
-										<div class="col-4">
-											<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
-										</div>
-										<div class="col-8">
-											<h4>Malesuada fermentum</h4>
-											<p>
-												Amet nullam fringilla nibh nulla convallis tique ante proin.
-											</p>
-										</div>
-									</div>
-									<footer>
-										<a href="#" class="button">Magna Adipiscing</a>
-									</footer>
-								</section>
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-								<header>
-									<h3><a href="#">Gravida aliquam penatibus</a></h3>
-								</header>
-								<p>
-									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-								</p>
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-								<header>
-									<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-								</header>
-								<p>
-									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-								</p>
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-								<header>
-									<h3><a href="#">Magna laoreet et aliquam</a></h3>
-								</header>
-								<p>
-									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
-								</p>
-							</article>
-						</div>
-					</div>
-
-				</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<div class="container">
-							<div class="row">
-
-							</div>
-							<hr />
-							<div class="row">
-								<div class="col-12">
-
-									<!-- Copyright -->
-										<div class="copyright">
-											<ul class="menu">
-												<li>&copy; Re-mapping Tacoma's Japantown. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-											</ul>
-										</div>
-
-								</div>
-
-							</div>
-						</div>
-					</div>
-
+	<div id="page-wrapper">
+		<!-- Header -->
+		<div id="header">
+			<!-- Inner -->
+			<div class="inner">
+				<header>
+				</header>
 			</div>
 
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li>
+						<a>Maps</a>
+						<ul>
+							<li><a href="dailypaths.html">Daily Paths</a></li>
+							<li>
+								<a>Japantown Maps&hellip;</a>
+								<ul>
+									<li><a href="businesses.html">Businesses</a></li>
+									<li><a href="homes.html">Homes</a></li>
+									<li><a href="moreplaces.html">More Japantown Places</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="furtherreading.html">Further Reading</a></li>
+					<li><a href="references.html">References</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Main -->
+		<div class="wrapper style1?""">
+			<div class="container">
+				<div class="row gtr-200">
+					<div class="col-8 col-12-mobile" id="content">
+						<article id="main">
+							<header2>
+								<h2><a>Homes</a></h2>
+							</header2>
+							<p>This map shows a collection of home addresses. Addresses were collected from the Japanese Language School project interviews and a variety of editions of Polk's Tacoma City Directories. Be sure to zoom in and click on specific points for more details.</p>
+							<div id="mapid"></div>
 
-		<!-- Scripts -->
-		<script src="jquery.min.js"></script>
-		<script src="jquery.dropotron.min.js"></script>
-		<script src="jquery.scrolly.min.js"></script>
-		<script src="jquery.scrollex.min.js"></script>
-		<script src="browser.min.js"></script>
-		<script src="breakpoints.min.js"></script>
-		<script src="util.js"></script>
-		<script src="main.js"></script>
+							<script>
+							var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
+							//Basemap
+							L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+								attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+								maxZoom: 18,
+								id: 'mapbox.light',
+								accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2p0ZzdoaXE2MDB1ZjQzcGZpMWY0eThpMCJ9.mjYzBhlOz8aG8-14z99Uyg'
+							}).addTo(mymap);
 
-	</body>
-</html>
+							var homes = L.icon({
+								iconUrl: 'images/homes.png', //icon from https://mapicons.mapsmarker.com/
+								iconSize: [30, 35],
+							});
+
+							$.getJSON("data/homes.geojson",function(data){
+								pathStops = L.geoJson(data, {
+									onEachFeature: function (feature, layer) {
+										layer.bindPopup('<p>Name: '+feature.properties.Name+'</p><p>Address: '+feature.properties.Address+'</p><p>Notes: '+feature.properties.Notes+'</p><p>Source: '+feature.properties.Source+'</p><p>Photo: '+feature.properties.Photo+'</p>');
+									}, pointToLayer: function (feature, latlng) {
+										var marker = L.marker(latlng,{icon: homes});
+										return marker;
+									}
+								}).addTo(mymap);
+							})
+							</script>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+				</div>
+						<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Re-mapping Tacoma's Japantown. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!-- Scripts -->
+			<script src="jquery.min.js"></script>
+			<script src="jquery.dropotron.min.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="jquery.scrollex.min.js"></script>
+			<script src="browser.min.js"></script>
+			<script src="breakpoints.min.js"></script>
+			<script src="util.js"></script>
+			<script src="main.js"></script>
+
+		</body>
+		</html>

@@ -16,27 +16,27 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var schools = L.icon({
   iconUrl: 'images/schools.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
+  iconSize: [40, 40],
 });
 var associations = L.icon({
   iconUrl: 'images/associations.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
+  iconSize: [40, 40],
 });
 var churches = L.icon({
   iconUrl: 'images/churches.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
+  iconSize: [40, 40],
 });
 var government = L.icon({
   iconUrl: 'images/government.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
+  iconSize: [40, 40],
 });
 var recreation = L.icon({
   iconUrl: 'images/recreation.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
+  iconSize: [40, 40],
 });
 var transportation = L.icon({
   iconUrl: 'images/train.png', //icon from https://mapicons.mapsmarker.com/
-  iconSize: [30, 35],
+  iconSize: [40, 40],
 });
 
 $.getJSON("data/associations.geojson",function(data){

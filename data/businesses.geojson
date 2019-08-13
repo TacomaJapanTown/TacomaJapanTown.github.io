@@ -1049,7 +1049,7 @@
          "type":"Feature",
          "properties":{
             "Address":"1334 1/2 Broadway",
-            "Name":"Nishioka Barber and Kobu Barber*",
+            "Name":"Nishioka Barber and Kobu Barber",
             "Source":"Ito (1926), Misaki Seto translated, Polk's 1920 Tacoma City Directory page 627",
             "Notes":"None",
             "Type":"Business",
@@ -1301,7 +1301,7 @@
          "type":"Feature",
          "properties":{
             "Address":"1349 Market Street",
-            "Name":"Matsuno Sushi Restaurant and Kubo Japanese Restau*",
+            "Name":"Matsuno Sushi Restaurant and Kubo Japanese Restaurant",
             "Source":"Ito (1926), Polk's 1929 Tacoma City Directory page 514, Morrison (1993, 57)",
             "Notes":"Owner: Mrs. I. Isa",
             "Type":"Business",
@@ -1409,7 +1409,7 @@
          "type":"Feature",
          "properties":{
             "Address":"1354 1/2 Broadway Street",
-            "Name":"New Washington Hotel and 3 other Japanese busines*",
+            "Name":"New Washington Hotel and 3 other Japanese businesses",
             "Source":"Polk's 1929 Tacoma City Directory page 867, Morrison (1993, 55)",
             "Notes":"Owner: Sadakichi Ohnuma",
             "Type":"Business",

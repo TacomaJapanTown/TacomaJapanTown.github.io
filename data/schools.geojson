@@ -186,18 +186,18 @@
          "properties":{
             "Address":"1712 S 17th Street",
             "Name":"Stanley Elementary",
-            "Source":"2019 address",
+            "Source":"2019 Address",
             "Notes":"None",
             "Type":"School",
-            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/33287/rec/1 target=_blank><img src=\"images/stanley.jpg\" width=\"200em\">"                                                                                                                                                                                                                                                        \u001a"
+            "Photo":"<a href=http://cdm17061.contentdm.oclc.org/cdm/singleitem/collection/p17061coll21/id/33287/rec/1 target=_blank><img src=\"images/stanley.jpg\" width=\"200em\">"
          },
          "geometry":{
             "type":"Point",
             "coordinates":[
-               -122.4592546,
-               47.24422827
-            ]
-         }
-      }
-   ]
-}
+               -122.4478527,
+               47.20912494
+             ]
+          }
+       }
+    ]
+ }

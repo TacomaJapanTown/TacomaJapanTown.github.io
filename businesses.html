@@ -14,6 +14,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<link rel="stylesheet" href="leaflet.css" />
 	<script src="leaflet.js"></script>
 	<script src="jquery-2.1.1.min.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
 	<style>
 	#mapid { height: 55em; width: 100em; }
 	</style>
@@ -79,7 +81,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 							var mymap = L.mapbox.map('mapid')
 							    .setView([47.256105, -122.443722], 14)
 							    .addLayer(L.mapbox.styleLayer('mapbox://styles/sarahp98/cjxo2uw8c3b401cogsrixqhd2'));
-
 
 							var businesses = L.icon({
 								iconUrl: 'images/businesses.png', //icon from https://mapicons.mapsmarker.com/

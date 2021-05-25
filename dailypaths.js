@@ -6,16 +6,30 @@
 //https://jsonlint.com/
 
 
-
+// 2019
 //Making the map
-var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
+// var map = L.map('mapid').setView([47.256105, -122.443722], 14);
 //Basemap
-var gray = L.tileLayer('https://api.mapbox.com/styles/v1/sarahp98/cjxo2g3kl2i3x1cmkrhdvjrbw/wmts?access_token=' + L.mapbox.accessToken,', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-  maxZoom: 18,
-  id: 'mapbox.light',
-  accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2twM2d0aTR2MDFjazJwdDg1eWI4eXAwMyJ9.SqFgMylpQh7qrbqOTvvTmg'
-}).addTo(mymap);
+// var gray = L.tileLayer('https://api.mapbox.com/styles/v1/sarahp98/cjxo2g3kl2i3x1cmkrhdvjrbw/wmts?access_token=' + L.mapbox.accessToken,', {
+//   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+//   maxZoom: 18,
+//   id: 'mapbox.light',
+//   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2twM2d0aTR2MDFjazJwdDg1eWI4eXAwMyJ9.SqFgMylpQh7qrbqOTvvTmg'
+// }).addTo(mymap);
+
+// 2021
+L.mapbox.accessToken = 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2twM2d0aTR2MDFjazJwdDg1eWI4eXAwMyJ9.SqFgMylpQh7qrbqOTvvTmg';
+var map = L.map('map').setView([47.256105, -122.443722], 14);
+
+// Add tiles from the Mapbox Static Tiles API
+// (https://docs.mapbox.com/api/maps/#static-tiles)
+// Tiles are 512x512 pixels and are offset by 1 zoom level
+L.tileLayer(
+    'https://api.mapbox.com/styles/v1/sarahp98/cjxo2g3kl2i3x1cmkrhdvjrbw/wmts?access_token=' + L.mapbox.accessToken, {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
 
 //The pause/play function for the pause button
 function pauseButtonClick()

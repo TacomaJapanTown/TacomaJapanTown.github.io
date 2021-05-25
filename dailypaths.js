@@ -13,7 +13,7 @@ var mymap = L.map('mapid').setView([47.256105, -122.443722], 14);
 var gray = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
-  id: 'mapbox.light',
+  id: 'mapbox.light-copy',
   accessToken: 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2twM2d0aTR2MDFjazJwdDg1eWI4eXAwMyJ9.SqFgMylpQh7qrbqOTvvTmg'
 }).addTo(mymap);
 

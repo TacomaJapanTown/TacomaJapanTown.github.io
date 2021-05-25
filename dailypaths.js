@@ -5,10 +5,7 @@
 //http://duspviz.mit.edu/web-map-workshop/leaflet-javascript-interactions/
 //https://jsonlint.com/
 
-
-
 //Making the map
-//'mapid' is the div id the map is in
 L.mapbox.accessToken = 'pk.eyJ1Ijoic2FyYWhwOTgiLCJhIjoiY2twM2d0aTR2MDFjazJwdDg1eWI4eXAwMyJ9.SqFgMylpQh7qrbqOTvvTmg';
 var mymap = L.mapbox.map('mapid')
     .setView([47.256105, -122.443722], 14)
